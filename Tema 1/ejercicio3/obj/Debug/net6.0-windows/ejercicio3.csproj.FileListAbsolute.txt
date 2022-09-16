@@ -1,0 +1,17 @@
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\bin\Debug\net6.0-windows\ejercicio3.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\bin\Debug\net6.0-windows\ejercicio3.deps.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\bin\Debug\net6.0-windows\ejercicio3.runtimeconfig.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\bin\Debug\net6.0-windows\ejercicio3.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\bin\Debug\net6.0-windows\ejercicio3.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\ejercicio3.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\ejercicio3.Form1.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\ejercicio3.csproj.GenerateResource.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\ejercicio3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\ejercicio3.AssemblyInfoInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\ejercicio3.AssemblyInfo.cs
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\ejercicio3.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\ejercicio3.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\refint\ejercicio3.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\ejercicio3.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\ejercicio3.genruntimeconfig.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 1\ejercicio1\ejercicio3\obj\Debug\net6.0-windows\ref\ejercicio3.dll
