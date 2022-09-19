@@ -39,21 +39,31 @@ namespace ejercicio4
             return numero;
         }
 
-        static string resultadoPonderado()
+        static string resultadoPonderado()  //switch comprobacion rangos
         {
             Random generador = new Random();
 
             int resultado = generador.Next(0, 100);
 
-            if (resultado <= 59)
+            //if (resultado <= 59)
+            //{
+            //    return "1";
+            //} else if (resultado > 59 && resultado <= 84)
+            //{
+            //    return "X";
+            //} else
+            //{
+            //    return "2";
+            //}
+
+            switch (resultado)
             {
-                return "1";
-            } else if (resultado > 59 && resultado <= 84)
-            {
-                return "X";
-            } else
-            {
-                return "2";
+                case <= 59:
+                    return "1";
+                case > 59 and <= 84:
+                    return "X";
+                default:
+                    return "2";
             }
         }
 
@@ -84,7 +94,7 @@ namespace ejercicio4
         {
             Console.Clear();
             Console.WriteLine("Juego tirar dados\nElige el número de caras del dado");
-            Boolean error = false;
+            bool error = false;
             int carasDado = pedirNumero();
             Console.WriteLine("Apuesta por un número del dado: ");
             int apuesta = 0;
