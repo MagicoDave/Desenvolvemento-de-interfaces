@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ejercicio2_1
 {
-    internal class Directivo : Persona
+    internal class Directivo : Persona, IPastaGansa
     {
         private string departamento;
         public string Departamento
@@ -55,6 +55,15 @@ namespace ejercicio2_1
             }
         }
 
+        private double pastaGanada;
+        public double PastaGanada
+        {
+            get
+            {
+                return pastaGanada;
+            }
+        }
+
         public override void mostrarDatos()
         {
             base.mostrarDatos();
@@ -83,11 +92,28 @@ namespace ejercicio2_1
             return jefe;
         }
 
+        double IPastaGansa.ganarPasta(double beneficiosEmpresa)
+        {
+            
+            if (beneficiosEmpresa < 0)
+            {
+                Directivo aux = this;
+                aux--;
+                pastaGanada = 0;
+            } else
+            {
+                pastaGanada = beneficiosEmpresa * Beneficios / 100;
+            }
+
+            return PastaGanada;
+        }
 
         public override double hacienda()
         {
-            throw new NotImplementedException();
+            return PastaGanada * 30 / 100;
         }
+
+        
 
         public Directivo(string nombre, string apellido, int edad, string dni, string departamento, int subordinados)
             : base(nombre, apellido, edad, dni)

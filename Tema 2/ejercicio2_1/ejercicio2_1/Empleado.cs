@@ -103,8 +103,8 @@ namespace ejercicio2_1
         {
             base.introducirDatos();
             Console.Write("Introduzca un salario:\n");
-            string aux = Console.ReadLine();
-            Salario = Convert.ToDouble(aux);
+           // string aux = Console.ReadLine();
+            Salario = Convert.ToDouble(Console.ReadLine());
             Console.Write("Introduzca un teléfono:\n");
             Telefono = Console.ReadLine();
         }

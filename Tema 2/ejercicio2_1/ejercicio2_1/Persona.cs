@@ -9,19 +9,20 @@ namespace ejercicio2_1
 {
     abstract class Persona
     {
-        private string nombre;
-        public string Nombre
-        {
-            set
-            {
-                nombre = value;
-            }
+        //private string nombre;
+        //public string Nombre
+        //{
+        //    set
+        //    {
+        //        nombre = value;
+        //    }
 
-            get
-            {
-                return nombre;
-            }
-        }
+        //    get
+        //    {
+        //        return nombre;
+        //    }
+        //}
+        public string Nombre { set; get; }
 
         private string apellidos;
         public string Apellidos

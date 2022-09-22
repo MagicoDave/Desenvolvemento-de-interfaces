@@ -11,17 +11,13 @@
             Console.ReadKey();
             Console.Clear();
 
-            dibujitos(6);
+            dibujitos(5);
             Console.ReadKey();
         }
 
         static bool factorial(double num, ref double factorial)
         {
-            if (num == 0)
-            {
-                factorial = 1;
-                return true;
-            }
+
             if (num < 0 || num > 10)
             {
                 return false;
@@ -37,7 +33,7 @@
             }
         }
 
-        static void dibujitos(int num)
+        static void dibujitos(int num = 10)
         {
             Random generator = new Random();
             for (int i = 0; i < num; i++)
@@ -47,15 +43,15 @@
             }
         }
 
-        static void dibujitos()
-        {
-            Random generator = new Random();
-            for (int i = 0; i < 10; i++)
-            {
-                Console.SetCursorPosition(generator.Next(1, 21), generator.Next(1, 11));
-                Console.Write("*");
-            }
-        }
+        //static void dibujitos()
+        //{
+        //    Random generator = new Random();
+        //    for (int i = 0; i < 10; i++)
+        //    {
+        //        Console.SetCursorPosition(generator.Next(1, 21), generator.Next(1, 11));
+        //        Console.Write("*");
+        //    }
+        //}
 
 
     }
