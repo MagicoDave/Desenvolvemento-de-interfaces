@@ -65,7 +65,7 @@ namespace ejercicio2_1
         public override void mostrarDatos()
         {
             base.mostrarDatos();
-            Console.Write("Salario: {0}\n IRPF: {1}%\nTeléfono: {2}\n", Salario, Irpf, Telefono);
+            Console.Write("Salario: {0}\nIRPF: {1}%\nTeléfono: {2}\n", Salario, Irpf, Telefono);
         }
 
         public void mostrarDatos(int num)

@@ -37,15 +37,15 @@ namespace ejercicio2_1
             set
             {
                 subordinados = value;
-                if (subordinados > 10)
+                if (subordinados < 10)
                 {
                     beneficios = 2;
-                } else if (subordinados > 50)
-                {
-                    beneficios = 4;
-                } else
+                } else if (subordinados < 50)
                 {
                     beneficios = 3.5;
+                } else
+                {
+                    beneficios = 4;
                 }
             }
 
