@@ -4,7 +4,7 @@ namespace ejercicio1
 {
     internal class Program
     {
-
+        //TODO: Hay que tener en cuenta si la base de datos está vacía porque si no puede entrar en bucle infinito
         static void Main(string[] args)
         {
             Dictionary<string, int> ordenadores = new Dictionary<string, int>();
@@ -42,7 +42,7 @@ namespace ejercicio1
                                 do
                                 {
                                     error = false;
-                                    ip = pedirString();
+                                    ip = pedirIp();
                                     if (comprobarIp(ip, ordenadores))
                                     {
                                         Console.WriteLine("La IP ya existe. Introduzca una IP diferente: ");
@@ -69,7 +69,7 @@ namespace ejercicio1
                                 do
                                 {
                                     error = false;
-                                    ip = pedirString();
+                                    ip = pedirIp();
                                     if (!comprobarIp(ip, ordenadores))
                                     {
                                         Console.WriteLine("La IP no existe. Introduzca una IP diferente: ");
@@ -104,7 +104,7 @@ namespace ejercicio1
                                 do
                                 {
                                     error = false;
-                                    ip = pedirString();
+                                    ip = pedirIp();
                                     if (!comprobarIp(ip, ordenadores))
                                     {
                                         Console.WriteLine("La IP no existe en la colección. Introduzca una IP diferente: ");
@@ -152,10 +152,13 @@ namespace ejercicio1
 
         }
 
-        static string pedirString()
+        static string pedirIp()
         {
 
             string cadena = "default";
+            string[] aux;
+            int num;
+            bool bandera;
             bool error;
 
             do
@@ -168,7 +171,31 @@ namespace ejercicio1
                     {
                         Console.WriteLine("No se puede dejar este campo vacio. Intentelo de nuevo.");
                         error = true;
+                    } else
+                    {
+                        aux = cadena.Split('.');
+                        if (aux.Length != 4)
+                        {
+                            Console.WriteLine("Formato no válido, tienen que ser cuatro números separados por puntos. Intentelo de nuevo.");
+                            error = true;
+                        } else
+                        {
+                            for (int i = 0; i < aux.Length; i++)
+                            {
+                                bandera = int.TryParse(aux[i], out num);
+                                if (!bandera)
+                                {
+                                    Console.WriteLine("Formato no válido, no se pudo convertir a entero alguna de las partes separadas por punto. Intentelo de nuevo.");
+                                    error = true;
+                                } else if (num < 0 || num > 255)
+                                {
+                                    Console.WriteLine("Los valores deben estar entre 0 y 255. Intentelo de nuevo.");
+                                    error = true;
+                                }
+                            }
+                        }
                     }
+                    
                 }
                 catch (Exception e)
                 {
@@ -182,13 +209,12 @@ namespace ejercicio1
 
         static bool comprobarIp(string ip, Dictionary<string, int> ordenadores)
         {
-            foreach (string clave in ordenadores.Keys)
+
+            if (ordenadores.ContainsKey(ip))
             {
-                if (clave == ip)
-                {
-                    return true;
-                }
+                return true;
             }
+
             return false;
         }
 
