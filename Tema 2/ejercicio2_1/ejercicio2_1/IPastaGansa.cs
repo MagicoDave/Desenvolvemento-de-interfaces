@@ -8,9 +8,7 @@ namespace ejercicio2_1
 {
     internal interface IPastaGansa
     {
-        double ganarPasta (double beneficios)
-        {
-            return 0;
-        }
+        double ganarPasta(double beneficios);
+ 
     }
 }
