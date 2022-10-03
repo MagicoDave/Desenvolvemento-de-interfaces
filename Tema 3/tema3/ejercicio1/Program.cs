@@ -65,55 +65,79 @@ namespace ejercicio1
                                 break;
                             case 1: //Borrar ordenador
                                 Console.Clear();
-                                Console.WriteLine("Introduce la IP del ordenador que quieres borrar: ");
-                                do
+                                if (ordenadores.Count == 0)
                                 {
-                                    error = false;
-                                    ip = pedirIp();
-                                    if (!comprobarIp(ip, ordenadores))
+                                    Console.WriteLine("No hay ordenadores que borrar. Introduzca un nuevo ordenador primero.");
+                                    Console.WriteLine("Pulse una tecla para continuar");
+                                    Console.ReadKey();
+                                } else
+                                {
+                                    Console.WriteLine("Introduce la IP del ordenador que quieres borrar: ");
+                                    do
                                     {
-                                        Console.WriteLine("La IP no existe. Introduzca una IP diferente: ");
-                                        error = true;
+                                        error = false;
+                                        ip = pedirIp();
+                                        if (!comprobarIp(ip, ordenadores))
+                                        {
+                                            Console.WriteLine("La IP no existe. Introduzca una IP diferente: ");
+                                            error = true;
+                                        }
+                                    } while (error);
+                                    try
+                                    {
+                                        ordenadores.Remove(ip);
+                                        Console.WriteLine("Ha eliminado el ordenador con IP {0}.\nPresione una tecla para continuar", ip);
+                                        Console.ReadKey();
                                     }
-                                } while (error);
-                                try
-                                {
-                                    ordenadores.Remove(ip);
-                                    Console.WriteLine("Ha eliminado el ordenador con IP {0}.\nPresione una tecla para continuar", ip);
-                                    Console.ReadKey();
-                                }
-                                catch (ArgumentNullException)
-                                {
-                                    Console.WriteLine("De alguna misteriosa manera, hemos conseguido un ArgumentNullException a pesar del control de excepciones. Buen trabajo" +
-                                        "\nPulsa una tecla para continuar");
-                                    Console.ReadKey();
+                                    catch (ArgumentNullException)
+                                    {
+                                        Console.WriteLine("De alguna misteriosa manera, hemos conseguido un ArgumentNullException a pesar del control de excepciones. Buen trabajo" +
+                                            "\nPulsa una tecla para continuar");
+                                        Console.ReadKey();
+                                    }
                                 }
                                 break;
                             case 2: //Mostrar colección
                                 Console.Clear();
-                                foreach (KeyValuePair<string,int> de in ordenadores)
+                                if (ordenadores.Count == 0)
                                 {
-                                    Console.WriteLine("Ordenador (IP): {0}\n\tRAM: {1}GB", de.Key, de.Value);
+                                    Console.WriteLine("No hay ordenadores que mostrar. Introduzca un nuevo ordenador primero.");
                                 }
+                                else
+                                {
+                                    foreach (KeyValuePair<string, int> de in ordenadores)
+                                    {
+                                        Console.WriteLine("Ordenador (IP): {0}\n\tRAM: {1}GB", de.Key, de.Value);
+                                    }
+                                }   
                                 Console.WriteLine("Pulse una tecla para continuar");
                                 Console.ReadKey();
                                 break;
                             case 3: //Mostrar ordenador
                                 Console.Clear();
-                                Console.WriteLine("Introduce la IP del ordenador a mostrar: ");
-                                do
+                                if (ordenadores.Count == 0)
                                 {
-                                    error = false;
-                                    ip = pedirIp();
-                                    if (!comprobarIp(ip, ordenadores))
+                                    Console.WriteLine("No hay ordenadores que mostrar. Introduzca un nuevo ordenador primero.");
+                                    Console.WriteLine("Pulse una tecla para continuar");
+                                    Console.ReadKey();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Introduce la IP del ordenador a mostrar: ");
+                                    do
                                     {
-                                        Console.WriteLine("La IP no existe en la colección. Introduzca una IP diferente: ");
-                                        error = true;
-                                    }
-                                } while (error);
-                                Console.WriteLine("Ordenador (IP): {0}\n\tRAM: {1}GB", ip, ordenadores[ip]);
-                                Console.WriteLine("Pulse una tecla para continuar");
-                                Console.ReadKey();
+                                        error = false;
+                                        ip = pedirIp();
+                                        if (!comprobarIp(ip, ordenadores))
+                                        {
+                                            Console.WriteLine("La IP no existe en la colección. Introduzca una IP diferente: ");
+                                            error = true;
+                                        }
+                                    } while (error);
+                                    Console.WriteLine("Ordenador (IP): {0}\n\tRAM: {1}GB", ip, ordenadores[ip]);
+                                    Console.WriteLine("Pulse una tecla para continuar");
+                                    Console.ReadKey();
+                                }
                                 break;
                             default: //Salir
                                 break;
