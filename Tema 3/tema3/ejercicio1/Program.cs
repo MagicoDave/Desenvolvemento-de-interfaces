@@ -4,7 +4,6 @@ namespace ejercicio1
 {
     internal class Program
     {
-        //TODO: Hay que tener en cuenta si la base de datos está vacía porque si no puede entrar en bucle infinito
         static void Main(string[] args)
         {
             Dictionary<string, int> ordenadores = new Dictionary<string, int>();

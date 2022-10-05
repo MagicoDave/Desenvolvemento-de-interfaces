@@ -9,8 +9,8 @@ namespace ejercicio2
 {
     internal class Aula
     {
-        public static int[,] notas;
-        public string[] alumnos;
+        private int[,] notas;
+        private string[] alumnos;
         enum Asignaturas
         {
             Pociones,
@@ -19,102 +19,144 @@ namespace ejercicio2
             ArtesOscuras
         }
 
+        public int[,] Notas
+        {
+            set => notas = value;
+            get => notas;
+        }
+
+        public string[] Alumnos
+        {
+            set => alumnos = value;
+            get => alumnos;
+        }
+
+
         public Aula(string[] alumnos)
         {
-            this.alumnos = new string[alumnos.Length];
-            for (int i = 0; i < alumnos.Length; i++)
+            Random generador = new Random();
+
+            Alumnos = alumnos;
+            for (int i = 0; i < Alumnos.Length; i++)
             {
-                this.alumnos[i] = alumnos[i].Trim().ToUpper();
+                Alumnos[i] = Alumnos[i].Trim().ToUpper();
             }
-            notas = new int[this.alumnos.Length,4];
+
+            Notas = new int[Alumnos.Length,4];
+            for (int i = 0; i < Notas.GetLength(0); i++)
+            {
+                for (int j = 0; j < Notas.GetLength(1); j++)
+                {
+                    Notas[i, j] = generador.Next(0, 11);
+                }
+            }
         }
 
         public Aula(string alumnos)
         {
-            this.alumnos = alumnos.Split(',');
-            for (int i = 0; i < this.alumnos.Length; i++)
+            Random generador = new Random();
+
+            Alumnos = alumnos.Split(',');
+            for (int i = 0; i < Alumnos.Length; i++)
             {
-                this.alumnos[i] = this.alumnos[i].Trim().ToUpper();
+                Alumnos[i] = Alumnos[i].Trim().ToUpper();
             }
-            notas = new int[this.alumnos.Length,4];
+
+            Notas = new int[Alumnos.Length,4];
+            for (int i = 0; i < Notas.GetLength(0); i++)
+            {
+                for (int j = 0; j < Notas.GetLength(1); j++)
+                {
+                    Notas[i, j] = generador.Next(0, 11);
+                }
+            }
         }
 
         public int this[int fila, int columna]
         {
             set
             {
-                notas[fila, columna] = value; 
+                Notas[fila, columna] = value; 
             }
             get
             {
-                return notas[fila, columna];
+                return Notas[fila, columna];
             }
         }
 
-        static double mediaNotas()
+        public double mediaNotas()
         {
             double aux = 0;
-            for (int i = 0; i < notas.GetLength(0); i++)
+            for (int i = 0; i < Notas.GetLength(0); i++)
             {
-                for (int j = 0; j < notas.GetLength(1); j++)
+                for (int j = 0; j < Notas.GetLength(1); j++)
                 {
-                    aux += notas[i, j];
+                    aux += Notas[i, j];
                 }
             }
 
-            return aux / (notas.GetLength(0) * notas.GetLength(1));
+            return aux / (Notas.GetLength(0) * Notas.GetLength(1));
         }
 
-        static double mediaAlumno(int indiceAlumno)
+        public double mediaAlumno(int indiceAlumno)
         {
             double aux = 0;
 
-            for (int i = 0; i < notas.GetLength(1); i++)
+            for (int i = 0; i < Notas.GetLength(1); i++)
             {
-                aux += notas[indiceAlumno, i];
+                aux += Notas[indiceAlumno, i];
             }
 
-            return aux/notas.GetLength(1);
+            return aux/Notas.GetLength(1);
 
         }
 
-        static double mediaAsignatura(int indiceAsignaturas)
+        public double mediaAsignatura(int indiceAsignaturas)
         {
             double aux = 0;
 
-            for (int i = 0; i < notas.GetLength(0); i++)
+            for (int i = 0; i < Notas.GetLength(0); i++)
             {
-                aux += notas[i, indiceAsignaturas];
+                aux += Notas[i, indiceAsignaturas];
             }
 
-            return aux / notas.GetLength(0);
+            return aux / Notas.GetLength(0);
         }
 
-        static void alumnoMaxMin (int indiceAlumno, out int max, out int min)
+        public void alumnoMaxMin (int indiceAlumno, out int max, out int min)
         {
             min = 10;
             max = 0;
-            for (int i = 0; i < notas.GetLength(1); i++)
+            for (int i = 0; i < Notas.GetLength(1); i++)
             {
-                if (notas[indiceAlumno, i] < min)
+                if (Notas[indiceAlumno, i] < min)
                 {
-                    min = notas[indiceAlumno, i];
+                    min = Notas[indiceAlumno, i];
                 }
 
-                if (notas[indiceAlumno, i] > max)
+                if (Notas[indiceAlumno, i] > max)
                 {
-                    max = notas[indiceAlumno, i];
+                    max = Notas[indiceAlumno, i];
                 }
             }
         }
 
-        static void tablaNotas()
+        public void tablaNotas()
         {
-            for (int i = 0; i < notas.GetLength(0); i++)
-            {
-                for (int j = 0; j < notas.GetLength(1); j++)
-                {
+            string[] nombresAsignaturas = Enum.GetNames(typeof(Asignaturas));
 
+            Console.Write("\n|{0,12}|", " ");
+            foreach (string asig in nombresAsignaturas)
+            {
+                Console.Write("{0,12}|", asig);
+            }
+
+            for (int i = 0; i < Notas.GetLength(0); i++)
+            {
+                Console.Write("\n|{0,12}|", Alumnos[i]);
+                for (int j = 0; j < Notas.GetLength(1); j++)
+                {
+                    Console.Write("{0,12}|", Notas[i,j]);
                 }
             }
         }

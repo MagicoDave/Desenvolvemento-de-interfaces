@@ -6,51 +6,68 @@ namespace ejer2
     {
         public delegate void MyDelegate();
 
-        public static void MenuGenerator(string[] opciones, MyDelegate[] delegados)
+        public static bool MenuGenerator(string[] opciones, MyDelegate[] delegados)
         {
             int contador = 1;
-            bool control = true;
+            int seleccion;
+
+            //Control de parámetros
+            if (opciones == null || delegados == null || opciones.Length != delegados.Length)
+            {
+
+                return false;
+            }
+
+            //Dibujar menú
             foreach (string opcion in opciones)
             {
                 Console.WriteLine("{0}. {1}", contador, opcion);
                 contador++;
             }
             Console.WriteLine("{0}. Salir", contador);
+
+            //Gestionar opciones
             do
             {
                 Console.WriteLine("Introduzca una opción: ");
-                int opcion;
-                if (control != int.TryParse(Console.ReadLine(), out opcion))
+                if (!int.TryParse(Console.ReadLine(), out seleccion))
                 {
                     Console.WriteLine("No se pudo convertir a entero. Intentar de nuevo");
-                } else if (control != opcion <= opciones.Length && opcion > 0)
+                } else if (seleccion > opciones.Length +1 || seleccion <= 0)
                 {
                     Console.WriteLine("El valor elegido no está en el rango. Intentar de nuevo");
-                } else
+                } else if (seleccion <= opciones.Length)
                 {
-                    delegados[opcion - 1].Invoke();
-                    //TODO Control de excepciones y si se creo correctamente el menú
+                    delegados[seleccion - 1].Invoke();
+                } else if (seleccion == opciones.Length +1)
+                {
+                    Console.WriteLine("El programa se cerrará");
                 }
-            } while (!control);
+            } while (seleccion != opciones.Length +1);
+
+            return true;
         }
 
-        static void f1()
-        {
-            Console.WriteLine("A");
-        }
-        static void f2()
-        {
-            Console.WriteLine("B");
-        }
-        static void f3()
-        {
-            Console.WriteLine("C");
-        }
+        //static void f1()
+        //{
+        //    Console.WriteLine("A");
+        //}
+        //static void f2()
+        //{
+        //    Console.WriteLine("B");
+        //}
+        //static void f3()
+        //{
+        //    Console.WriteLine("C");
+        //}
 
         static void Main(string[] args)
         {
-            MenuGenerator(new string[] { "Op1", "Op2", "Op3" },
-                new MyDelegate[] { f1, f2, f3 });
+            MenuGenerator(new string[] { "Op1", "Op2", "Op3","op4"},
+                new MyDelegate[] { () => {Console.WriteLine("A"); }, 
+                    () => { Console.WriteLine("B"); }, 
+                    () => { Console.WriteLine("C"); } ,
+                 () => { Console.WriteLine("D"); }});
             Console.ReadKey();
         }
     }

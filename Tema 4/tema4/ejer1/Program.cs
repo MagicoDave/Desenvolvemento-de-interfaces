@@ -19,13 +19,16 @@ namespace ejer1
         {
 
             int[] v = { 2, 2, 6, 7, 1, 10, 3 };
-            Array.ForEach(v, view =>
+            Array.ForEach(v, grade =>
             {
-                Console.ForegroundColor = view >= 5 ? ConsoleColor.Green : ConsoleColor.Red;
-                Console.WriteLine($"Student grade: {view,3}.");
+                Console.ForegroundColor = grade >= 5 ? ConsoleColor.Green : ConsoleColor.Red;
+                Console.WriteLine($"Student grade: {grade,3}.");
                 Console.ResetColor();
             });
-            int res = Array.FindIndex(v, pass => pass >=5);
+            int res = Array.FindIndex(v, pass => pass >= 5);
+
+
+            // Exist
             Console.WriteLine($"The first passing student is number {res + 1} in the list.");
             res = Array.FindLastIndex(v, pass => pass >= 5);
             Console.WriteLine($"The last passing student is number {res + 1} in the list");
