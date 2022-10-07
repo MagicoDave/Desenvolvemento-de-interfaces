@@ -14,7 +14,6 @@ namespace ejer2
             //Control de parámetros
             if (opciones == null || delegados == null || opciones.Length != delegados.Length)
             {
-
                 return false;
             }
 

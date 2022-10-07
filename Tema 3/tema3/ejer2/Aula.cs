@@ -11,7 +11,7 @@ namespace ejercicio2
     {
         private int[,] notas;
         private string[] alumnos;
-        enum Asignaturas
+        public enum Asignaturas
         {
             Pociones,
             Quidditch,

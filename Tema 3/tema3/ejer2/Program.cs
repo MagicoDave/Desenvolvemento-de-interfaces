@@ -6,8 +6,9 @@ namespace ejer2
     {
         static void Main(string[] args)
         {
-            Aula prueba = new Aula(new string[] {"Pepe", "Maria", "Jose", "Rigoberto", "Eustaquio" });
-            prueba.tablaNotas();
+            //Aula prueba = new Aula(new string[] {"Pepe", "Maria", "Jose", "Rigoberto", "Eustaquio" });
+            Menu menu = new Menu(new string[] { "Pepe", "Maria", "Jose", "Rigoberto", "Eustaquio" });
+            menu.Inicio();
         }
     }
 }
