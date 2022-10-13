@@ -1,0 +1,17 @@
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\bin\Debug\net6.0-windows\ejer3.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\bin\Debug\net6.0-windows\ejer3.deps.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\bin\Debug\net6.0-windows\ejer3.runtimeconfig.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\bin\Debug\net6.0-windows\ejer3.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\bin\Debug\net6.0-windows\ejer3.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\ejer3.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\ejer3.Form1.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\ejer3.csproj.GenerateResource.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\ejer3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\ejer3.AssemblyInfoInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\ejer3.AssemblyInfo.cs
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\ejer3.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\ejer3.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\refint\ejer3.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\ejer3.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\ejer3.genruntimeconfig.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer3\obj\Debug\net6.0-windows\ref\ejer3.dll

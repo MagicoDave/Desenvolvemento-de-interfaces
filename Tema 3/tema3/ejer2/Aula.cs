@@ -141,24 +141,6 @@ namespace ejercicio2
             }
         }
 
-        public void tablaNotas()
-        {
-            string[] nombresAsignaturas = Enum.GetNames(typeof(Asignaturas));
 
-            Console.Write("\n|{0,12}|", " ");
-            foreach (string asig in nombresAsignaturas)
-            {
-                Console.Write("{0,12}|", asig);
-            }
-
-            for (int i = 0; i < Notas.GetLength(0); i++)
-            {
-                Console.Write("\n|{0,12}|", Alumnos[i]);
-                for (int j = 0; j < Notas.GetLength(1); j++)
-                {
-                    Console.Write("{0,12}|", Notas[i,j]);
-                }
-            }
-        }
     }
 }
