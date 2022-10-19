@@ -38,7 +38,7 @@ namespace ejercicio2_1
                                 break;
                             case 1:
                                 Console.Clear();
-
+                                Eliminar();
                                 Console.WriteLine("Pulse cualquier tecla para continuar");
                                 Console.ReadKey();
                                 break;
@@ -100,7 +100,7 @@ namespace ejercicio2_1
             Console.WriteLine("¿Desea introducir un nuevo directivo o empleado?");
             Console.WriteLine("1. Directivo\n2. Empleado\n3. Volver");
             int opcion;
-            bool bandera = true;
+            bool bandera;
             do
             {
                 bandera = int.TryParse(Console.ReadLine(), out opcion);

@@ -66,6 +66,7 @@
             this.btnCloseProcess.TabIndex = 2;
             this.btnCloseProcess.Text = "Close Process";
             this.btnCloseProcess.UseVisualStyleBackColor = true;
+            this.btnCloseProcess.Click += new System.EventHandler(this.btnCloseProcess_Click);
             // 
             // btnKillProcess
             // 
@@ -75,6 +76,7 @@
             this.btnKillProcess.TabIndex = 3;
             this.btnKillProcess.Text = "Kill Process";
             this.btnKillProcess.UseVisualStyleBackColor = true;
+            this.btnKillProcess.Click += new System.EventHandler(this.btnKillProcess_Click);
             // 
             // btnRunApp
             // 
@@ -84,6 +86,7 @@
             this.btnRunApp.TabIndex = 4;
             this.btnRunApp.Text = "Run App";
             this.btnRunApp.UseVisualStyleBackColor = true;
+            this.btnRunApp.Click += new System.EventHandler(this.btnRunApp_Click);
             // 
             // btnStartsWith
             // 
@@ -93,6 +96,7 @@
             this.btnStartsWith.TabIndex = 5;
             this.btnStartsWith.Text = "Starts With...";
             this.btnStartsWith.UseVisualStyleBackColor = true;
+            this.btnStartsWith.Click += new System.EventHandler(this.btnStartsWith_Click);
             // 
             // txtOutput
             // 

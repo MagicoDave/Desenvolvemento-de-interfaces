@@ -95,7 +95,7 @@ namespace ejercicio2
                 }
             }
 
-            return aux / (Notas.GetLength(0) * Notas.GetLength(1));
+            return aux / Notas.Length;// (Notas.GetLength(0) * Notas.GetLength(1));
         }
 
         public double mediaAlumno(int indiceAlumno)
