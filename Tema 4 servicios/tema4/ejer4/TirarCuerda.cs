@@ -13,16 +13,30 @@ namespace ejer4
         public static bool bandera = true;
         static readonly private object l = new object();
 
+        public int Cuerda
+        {
+            get => cuerda;
+        }
+
         Thread t1 = new Thread(() =>
         {
             while (bandera)
             {
                 lock (l)
                 {
-                    cuerda++;
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine(cuerda);
-                    Console.ResetColor();
+                    if (bandera)
+                    {
+                        cuerda++;
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine(cuerda);
+                        Console.ResetColor();
+
+                        if (cuerda >= 1000)
+                        {
+                            bandera = false;
+                        }
+                    }
+                    
                 }
             }
         });
@@ -32,10 +46,18 @@ namespace ejer4
             {
                 lock (l)
                 {
-                    cuerda--;
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(cuerda);
-                    Console.ResetColor();
+                    if (bandera)
+                    {
+                        cuerda--;
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(cuerda);
+                        Console.ResetColor();
+
+                        if (cuerda <= -1000)
+                        {
+                            bandera = false;
+                        }
+                    }
                 }
             }
         });
@@ -44,24 +66,8 @@ namespace ejer4
         {
             t1.Start();
             t2.Start();
-
-            while (bandera)
-            {
-                if (cuerda >= 1000 || cuerda <= -1000)
-                {
-                    bandera = false;
-
-                    if (cuerda >= 1000)
-                    {
-                        Console.WriteLine("\n El primer hilo gana");
-                    }
-                    else
-                    {
-                        Console.WriteLine("\n El segundo hilo gana");
-                    }
-
-                }
-            }
+            t1.Join();
+            t2.Join();
         }
     }
 }

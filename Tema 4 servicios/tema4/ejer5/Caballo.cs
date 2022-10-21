@@ -24,19 +24,22 @@ namespace ejer5
             {
                 lock (l)
                 {
-                    for (int i = 0; i < generador.Next(4); i++)
+                    if (bandera)
                     {
-                        Console.SetCursorPosition(Posicion[0], Posicion[1]);
-                        Console.Write("*");
-                        Posicion[0]++;
-                    }
+                        for (int i = 0; i < generador.Next(4); i++)
+                        {
+                            Console.SetCursorPosition(Posicion[0], Posicion[1]);
+                            Console.Write("*");
+                            Posicion[0]++;
+                        }
 
-                    if (Posicion[0] >= 100)
-                    {
-                        Console.SetCursorPosition(0, 13);
-                        Console.Write("¡" + Nombre + " ha ganado!");
-                        bandera = false;
-                    }
+                        if (Posicion[0] >= 100)
+                        {
+                            Console.SetCursorPosition(0, 13);
+                            Console.Write("¡" + Nombre + " ha ganado!");
+                            bandera = false;
+                        }
+                    }      
                 }
 
                 Thread.Sleep(generador.Next(100, 201));
