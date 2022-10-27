@@ -13,3 +13,18 @@ C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer7
 C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer7\obj\Debug\net6.0\ejer7.pdb
 C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer7\obj\Debug\net6.0\ejer7.genruntimeconfig.cache
 C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4\tema4\ejer7\obj\Debug\net6.0\ref\ejer7.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\bin\Debug\net6.0\ejer7.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\bin\Debug\net6.0\ejer7.deps.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\bin\Debug\net6.0\ejer7.runtimeconfig.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\bin\Debug\net6.0\ejer7.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\bin\Debug\net6.0\ejer7.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\obj\Debug\net6.0\ejer7.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\obj\Debug\net6.0\ejer7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\obj\Debug\net6.0\ejer7.AssemblyInfoInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\obj\Debug\net6.0\ejer7.AssemblyInfo.cs
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\obj\Debug\net6.0\ejer7.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\obj\Debug\net6.0\ejer7.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\obj\Debug\net6.0\refint\ejer7.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\obj\Debug\net6.0\ejer7.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\obj\Debug\net6.0\ejer7.genruntimeconfig.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 servicios\tema4\ejer7\obj\Debug\net6.0\ref\ejer7.dll

@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejer1", "Ejer1\Ejer1.csproj", "{5AD8BFBB-6397-4DDD-9081-6C08F4C4441A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer2", "Ejer2\Ejer2.csproj", "{FB1637BD-C6D0-4971-B4A9-F039EBEAE131}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejer2", "Ejer2\Ejer2.csproj", "{FB1637BD-C6D0-4971-B4A9-F039EBEAE131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer3", "Ejer3\Ejer3.csproj", "{B720AE73-77E1-45B0-B2DC-2E5CBD133FC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FB1637BD-C6D0-4971-B4A9-F039EBEAE131}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB1637BD-C6D0-4971-B4A9-F039EBEAE131}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB1637BD-C6D0-4971-B4A9-F039EBEAE131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B720AE73-77E1-45B0-B2DC-2E5CBD133FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B720AE73-77E1-45B0-B2DC-2E5CBD133FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B720AE73-77E1-45B0-B2DC-2E5CBD133FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B720AE73-77E1-45B0-B2DC-2E5CBD133FC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
