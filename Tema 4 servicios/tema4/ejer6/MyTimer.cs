@@ -43,9 +43,9 @@ namespace ejer6
                     {
                         Monitor.Wait(l);
                     }
-                    Thread.Sleep(interval);
                     delegado.Invoke();
                 }
+                Thread.Sleep(interval);
             }
         }
 
@@ -54,6 +54,7 @@ namespace ejer6
             delegado = new d(funcion);
             thread = new Thread(loop);
             thread.Start();
+            thread.IsBackground = true;
             pause();
         }
     }

@@ -9,15 +9,15 @@ namespace ejer7
     internal class Game
     {
 
-        static readonly object l = new object();
+        public static readonly object l = new object();
 
         static public bool flag;
         static public bool pause;
         int score;
 
-        public static Display display = new Display(new int[] { 20, 6 }, l);
-        Player player1 = new Player("Player 1", new int[] { 5, 5 }, true, l, display);
-        Player player2 = new Player("Player 2", new int[] { 30, 5 }, false, l, display);
+        public static Display display = new Display(new int[] { 20, 6 });
+        Player player1 = new Player("Player 1", new int[] { 5, 5 }, true, display);
+        Player player2 = new Player("Player 2", new int[] { 30, 5 }, false, display);
 
 
         public void start()

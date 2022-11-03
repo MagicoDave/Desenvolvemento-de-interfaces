@@ -15,19 +15,17 @@ namespace ejer7
         public bool flag;
         public bool pause;
 
-        object l;
-
         private void spin()
         {
             while (flag)
             {
-                lock (l)
+                lock (Game.l)
                 {
                     if (flag)
                     {
                         if (pause)
                         {
-                            Monitor.Wait(l);
+                            Monitor.Wait(Game.l);
                         }
                         if (n > 3)
                         {
@@ -42,12 +40,11 @@ namespace ejer7
             }
         }
 
-        public Display(int[] position, object l)
+        public Display(int[] position)
         {
             this.position = position;
             n = 0;
             flag = true;
-            this.l = l;
             thread = new Thread(spin);
         }
     }

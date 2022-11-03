@@ -52,6 +52,7 @@
             this.chkModal.TabIndex = 1;
             this.chkModal.Text = "Modal";
             this.chkModal.UseVisualStyleBackColor = true;
+            this.chkModal.CheckedChanged += new System.EventHandler(this.chkModal_CheckedChanged);
             // 
             // openFileDialog1
             // 
@@ -68,7 +69,7 @@
             this.Controls.Add(this.chkModal);
             this.Controls.Add(this.btnNuevaImagen);
             this.Name = "Form1";
-            this.Text = "Ejer3";
+            this.Text = "Visor de imágenes";
             this.ResumeLayout(false);
             this.PerformLayout();
 

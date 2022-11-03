@@ -15,3 +15,4 @@ C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 interfaces\
 C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 interfaces\tema4_interfaces\Ejer3\obj\Debug\net6.0-windows\Ejer3.pdb
 C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 interfaces\tema4_interfaces\Ejer3\obj\Debug\net6.0-windows\Ejer3.genruntimeconfig.cache
 C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 interfaces\tema4_interfaces\Ejer3\obj\Debug\net6.0-windows\ref\Ejer3.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 interfaces\tema4_interfaces\Ejer3\obj\Debug\net6.0-windows\Ejer3.Form2.resources
