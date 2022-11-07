@@ -7,6 +7,8 @@ namespace Ejer4
 
         public delegate double Operacion(double a, double b);
         public string signoOperacion = "+";
+        public int minutos = 0;
+        public int segundos = 0;
 
         public Form1()
         {
@@ -37,13 +39,34 @@ namespace Ejer4
                 operaciones.Add("/", division(a, b));
                 lblResultado.Text = string.Format("= {0}", operaciones[signoOperacion]);
             }
- 
-            
+
+
         }
 
-        private void txtNum1_TextChanged(object sender, EventArgs e)
+        private void textChanged(object sender, EventArgs e)
         {
+            double aux;
 
+            if (double.TryParse(((TextBox)sender).Text, out aux))
+            {
+                ((TextBox)sender).BackColor = Color.LightGreen;
+            }
+            else
+            {
+                ((TextBox)sender).BackColor = Color.IndianRed;
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (segundos >= 59)
+            {
+                segundos = 0;
+                minutos++;
+            }
+            segundos++;
+            
+            this.Text = String.Format("{0,2}:{1,2}", minutos.ToString("D2"), segundos.ToString("D2"));
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.txtNum2 = new System.Windows.Forms.TextBox();
             this.btnOperar = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.rbDivision = new System.Windows.Forms.RadioButton();
             this.lblOperacion = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // txtNum1
@@ -45,7 +47,7 @@
             this.txtNum1.Name = "txtNum1";
             this.txtNum1.Size = new System.Drawing.Size(100, 23);
             this.txtNum1.TabIndex = 0;
-            this.txtNum1.TextChanged += new System.EventHandler(this.txtNum1_TextChanged);
+            this.txtNum1.TextChanged += new System.EventHandler(this.textChanged);
             // 
             // txtNum2
             // 
@@ -53,7 +55,7 @@
             this.txtNum2.Name = "txtNum2";
             this.txtNum2.Size = new System.Drawing.Size(100, 23);
             this.txtNum2.TabIndex = 1;
-            this.txtNum2.TextChanged += new System.EventHandler(this.txtNum1_TextChanged);
+            this.txtNum2.TextChanged += new System.EventHandler(this.textChanged);
             // 
             // btnOperar
             // 
@@ -68,6 +70,7 @@
             // rbSuma
             // 
             this.rbSuma.AutoSize = true;
+            this.rbSuma.Checked = true;
             this.rbSuma.Location = new System.Drawing.Point(227, 193);
             this.rbSuma.Name = "rbSuma";
             this.rbSuma.Size = new System.Drawing.Size(33, 19);
@@ -84,7 +87,6 @@
             this.rbResta.Name = "rbResta";
             this.rbResta.Size = new System.Drawing.Size(30, 19);
             this.rbResta.TabIndex = 4;
-            this.rbResta.TabStop = true;
             this.rbResta.Text = "-";
             this.rbResta.UseVisualStyleBackColor = true;
             this.rbResta.CheckedChanged += new System.EventHandler(this.rbOperacion_CheckedChanged);
@@ -96,7 +98,6 @@
             this.rbMultiplicar.Name = "rbMultiplicar";
             this.rbMultiplicar.Size = new System.Drawing.Size(30, 19);
             this.rbMultiplicar.TabIndex = 5;
-            this.rbMultiplicar.TabStop = true;
             this.rbMultiplicar.Text = "*";
             this.rbMultiplicar.UseVisualStyleBackColor = true;
             this.rbMultiplicar.CheckedChanged += new System.EventHandler(this.rbOperacion_CheckedChanged);
@@ -108,7 +109,6 @@
             this.rbDivision.Name = "rbDivision";
             this.rbDivision.Size = new System.Drawing.Size(30, 19);
             this.rbDivision.TabIndex = 6;
-            this.rbDivision.TabStop = true;
             this.rbDivision.Text = "/";
             this.rbDivision.UseVisualStyleBackColor = true;
             this.rbDivision.CheckedChanged += new System.EventHandler(this.rbOperacion_CheckedChanged);
@@ -116,11 +116,12 @@
             // lblOperacion
             // 
             this.lblOperacion.AutoSize = true;
-            this.lblOperacion.Location = new System.Drawing.Point(280, 167);
+            this.lblOperacion.Location = new System.Drawing.Point(290, 167);
             this.lblOperacion.Name = "lblOperacion";
-            this.lblOperacion.Size = new System.Drawing.Size(38, 15);
+            this.lblOperacion.Size = new System.Drawing.Size(15, 15);
             this.lblOperacion.TabIndex = 7;
-            this.lblOperacion.Text = "label1";
+            this.lblOperacion.Text = "+";
+            this.lblOperacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblResultado
             // 
@@ -130,6 +131,12 @@
             this.lblResultado.Size = new System.Drawing.Size(15, 15);
             this.lblResultado.TabIndex = 8;
             this.lblResultado.Text = "=";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -163,5 +170,6 @@
         private RadioButton rbDivision;
         private Label lblOperacion;
         private Label lblResultado;
+        private System.Windows.Forms.Timer timer1;
     }
 }
