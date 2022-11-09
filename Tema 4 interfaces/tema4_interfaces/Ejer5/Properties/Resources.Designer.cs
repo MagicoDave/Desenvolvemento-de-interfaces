@@ -79,5 +79,25 @@ namespace Ejer5.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon bonfire_black {
+            get {
+                object obj = ResourceManager.GetObject("bonfire_black", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon bonfire_color {
+            get {
+                object obj = ResourceManager.GetObject("bonfire_color", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }

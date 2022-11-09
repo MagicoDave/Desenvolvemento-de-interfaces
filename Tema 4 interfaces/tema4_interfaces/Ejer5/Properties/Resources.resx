@@ -124,4 +124,10 @@
   <data name="arrow_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bonfire_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bonfire_stake_campfire_blaze_fire_log_icon_194227.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bonfire_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bonfire_stake_campfire_blaze_fire_log_icon_194287.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

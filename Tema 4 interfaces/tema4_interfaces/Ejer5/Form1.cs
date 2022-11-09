@@ -3,7 +3,9 @@ namespace Ejer5
     public partial class Form1 : Form
     {
 
-        string titulo = "Movedor de cosas 1.0";
+        string titulo = "     *** Movedor de cosas 1.0 ***";
+        int contador = 0;
+        bool bonfire = true;
 
         public Form1()
         {
@@ -14,6 +16,7 @@ namespace Ejer5
             btnMoverDerecha.BackgroundImageLayout = ImageLayout.Zoom;
             btnMoverIzquierda.BackgroundImage = Properties.Resources.arrow_left;
             btnMoverIzquierda.BackgroundImageLayout = ImageLayout.Zoom;
+
         }
 
         private void btnMoverDerecha_Click(object sender, EventArgs e)
@@ -102,7 +105,23 @@ namespace Ejer5
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
+            if (contador >= titulo.Length)
+            {
+                contador = 0;
+            }
+            this.Text = titulo.Substring(titulo.Length - contador, contador);
+            contador++;
+
+            if (bonfire)
+            {
+                this.Icon = Properties.Resources.bonfire_black;
+                bonfire = false;
+            }
+            else
+            {
+                this.Icon = Properties.Resources.bonfire_color;
+                bonfire=true;
+            }
         }
     }
 }
