@@ -15,6 +15,7 @@ namespace Ejer6
 
         int intentos = 3;
         string pin = "1234";
+        bool autentificacion = false;
 
         public Form2()
         {
@@ -28,6 +29,7 @@ namespace Ejer6
             {
                 if (txtPin.Text.Equals(pin))
                 {
+                    autentificacion = true;
                     this.Close();
                 }
                 else
@@ -40,6 +42,14 @@ namespace Ejer6
                         Application.Exit();
                     }
                 }
+            }
+        }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {         
+            if (!autentificacion)
+            {
+                Application.Exit();
             }
         }
     }

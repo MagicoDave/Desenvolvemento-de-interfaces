@@ -37,6 +37,9 @@
             this.txtImagen = new System.Windows.Forms.TextBox();
             this.btnImagen = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,6 +120,33 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(135, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "R";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(238, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(15, 15);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "G";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(343, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(14, 15);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "B";
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnColor;
@@ -124,6 +154,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnSalir;
             this.ClientSize = new System.Drawing.Size(486, 581);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnImagen);
             this.Controls.Add(this.txtImagen);
@@ -158,5 +191,8 @@
         private TextBox txtImagen;
         private Button btnImagen;
         private PictureBox pictureBox1;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }

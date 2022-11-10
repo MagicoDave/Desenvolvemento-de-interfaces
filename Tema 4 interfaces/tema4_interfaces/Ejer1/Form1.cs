@@ -1,4 +1,4 @@
-#define CARACTER
+#define CARACT
 
 using System.Media;
 
@@ -36,19 +36,19 @@ namespace Ejer1
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
 
-            switch (e.Button)
-            {
-                case MouseButtons.Left:
-                    button1.BackColor = Color.Red;
-                    break;
-                case MouseButtons.Right:
-                    button2.BackColor = Color.Blue;
-                    break;
-                default:
-                    button1.BackColor = Color.Green;
-                    button2.BackColor = Color.Blue;
-                    break;
-            }
+            //switch (e.Button)
+            //{
+            //    case MouseButtons.Left:
+            //        button1.BackColor = Color.Red;
+            //        break;
+            //    case MouseButtons.Right:
+            //        button2.BackColor = Color.Blue;
+            //        break;
+            //    default:
+            //        button1.BackColor = Color.Green;
+            //        button2.BackColor = Color.Blue;
+            //        break;
+            //}
 
         }
 
@@ -86,8 +86,12 @@ namespace Ejer1
             }
         }
 
-        private void Form1_KeyUp(object sender, KeyEventArgs e)
+
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)  //Uso de chars
         {
+
+#if CARACTER
 
             if (e.KeyCode == Keys.Escape)
             {
@@ -95,14 +99,22 @@ namespace Ejer1
             }
             else
             {
-#if CARACTER
-                this.Text = e.KeyCode.ToString();
-#elif !CARACTER
-                this.Text = e.KeyValue.ToString();
-#endif 
-            }
 
+                this.Text = e.KeyCode.ToString();
+            }
+#endif
         }
+
+
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+#if !CARACTER
+            this.Text = e.KeyChar.ToString();
+#endif
+        }
+
+
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -112,5 +124,7 @@ namespace Ejer1
                 e.Cancel = true;
             }
         }
+
+
     }
 }

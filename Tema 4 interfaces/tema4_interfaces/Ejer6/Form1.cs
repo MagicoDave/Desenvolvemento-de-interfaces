@@ -112,5 +112,14 @@ namespace Ejer6
         {
             saveFileDialog1.ShowDialog(this);
         }
+
+        private void saveFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            StreamWriter s = new StreamWriter(saveFileDialog1.FileName, true);
+            s.Write("\n" + txtMovil.Text);
+            s.Close();
+
+
+        }
     }
 }
