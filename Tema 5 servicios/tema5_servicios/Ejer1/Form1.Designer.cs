@@ -34,7 +34,8 @@
             this.listBoxArchivos = new System.Windows.Forms.ListBox();
             this.lblSubdirectorios = new System.Windows.Forms.Label();
             this.lblArchivos = new System.Windows.Forms.Label();
-            this.lblInfoArchivo = new System.Windows.Forms.Label();
+            this.lblNombreArchivo = new System.Windows.Forms.Label();
+            this.lblTamanoArchivo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtDireccion
@@ -63,6 +64,7 @@
             this.listBoxDirectorios.Name = "listBoxDirectorios";
             this.listBoxDirectorios.Size = new System.Drawing.Size(389, 424);
             this.listBoxDirectorios.TabIndex = 2;
+            this.listBoxDirectorios.SelectedIndexChanged += new System.EventHandler(this.listBoxDirectorios_SelectedIndexChanged);
             // 
             // listBoxArchivos
             // 
@@ -72,6 +74,8 @@
             this.listBoxArchivos.Name = "listBoxArchivos";
             this.listBoxArchivos.Size = new System.Drawing.Size(381, 424);
             this.listBoxArchivos.TabIndex = 3;
+            this.listBoxArchivos.SelectedIndexChanged += new System.EventHandler(this.listBoxArchivos_SelectedIndexChanged);
+            this.listBoxArchivos.DoubleClick += new System.EventHandler(this.listBoxArchivos_DoubleClick);
             // 
             // lblSubdirectorios
             // 
@@ -91,14 +95,23 @@
             this.lblArchivos.TabIndex = 5;
             this.lblArchivos.Text = "Archivos";
             // 
-            // lblInfoArchivo
+            // lblNombreArchivo
             // 
-            this.lblInfoArchivo.AutoSize = true;
-            this.lblInfoArchivo.Location = new System.Drawing.Point(407, 19);
-            this.lblInfoArchivo.Name = "lblInfoArchivo";
-            this.lblInfoArchivo.Size = new System.Drawing.Size(105, 15);
-            this.lblInfoArchivo.TabIndex = 6;
-            this.lblInfoArchivo.Text = "Nombre:  Tamaño:";
+            this.lblNombreArchivo.AutoSize = true;
+            this.lblNombreArchivo.Location = new System.Drawing.Point(407, 19);
+            this.lblNombreArchivo.Name = "lblNombreArchivo";
+            this.lblNombreArchivo.Size = new System.Drawing.Size(60, 15);
+            this.lblNombreArchivo.TabIndex = 6;
+            this.lblNombreArchivo.Text = "Nombre:  ";
+            // 
+            // lblTamanoArchivo
+            // 
+            this.lblTamanoArchivo.AutoSize = true;
+            this.lblTamanoArchivo.Location = new System.Drawing.Point(606, 19);
+            this.lblTamanoArchivo.Name = "lblTamanoArchivo";
+            this.lblTamanoArchivo.Size = new System.Drawing.Size(55, 15);
+            this.lblTamanoArchivo.TabIndex = 7;
+            this.lblTamanoArchivo.Text = "Tamaño: ";
             // 
             // Form1
             // 
@@ -106,7 +119,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 537);
-            this.Controls.Add(this.lblInfoArchivo);
+            this.Controls.Add(this.lblTamanoArchivo);
+            this.Controls.Add(this.lblNombreArchivo);
             this.Controls.Add(this.lblArchivos);
             this.Controls.Add(this.lblSubdirectorios);
             this.Controls.Add(this.listBoxArchivos);
@@ -128,6 +142,7 @@
         private ListBox listBoxArchivos;
         private Label lblSubdirectorios;
         private Label lblArchivos;
-        private Label lblInfoArchivo;
+        private Label lblNombreArchivo;
+        private Label lblTamanoArchivo;
     }
 }
