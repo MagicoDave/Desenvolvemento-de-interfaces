@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnNuevaImagen = new System.Windows.Forms.Button();
             this.chkModal = new System.Windows.Forms.CheckBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -63,11 +64,13 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnNuevaImagen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(361, 288);
             this.Controls.Add(this.chkModal);
             this.Controls.Add(this.btnNuevaImagen);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Visor de imágenes";
             this.ResumeLayout(false);

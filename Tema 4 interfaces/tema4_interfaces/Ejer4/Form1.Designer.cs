@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.txtNum2 = new System.Windows.Forms.TextBox();
             this.btnOperar = new System.Windows.Forms.Button();
@@ -62,7 +63,7 @@
             this.btnOperar.Location = new System.Drawing.Point(257, 218);
             this.btnOperar.Name = "btnOperar";
             this.btnOperar.Size = new System.Drawing.Size(75, 23);
-            this.btnOperar.TabIndex = 2;
+            this.btnOperar.TabIndex = 6;
             this.btnOperar.Text = "Operar";
             this.btnOperar.UseVisualStyleBackColor = true;
             this.btnOperar.Click += new System.EventHandler(this.btnOperar_Click);
@@ -74,7 +75,7 @@
             this.rbSuma.Location = new System.Drawing.Point(227, 193);
             this.rbSuma.Name = "rbSuma";
             this.rbSuma.Size = new System.Drawing.Size(33, 19);
-            this.rbSuma.TabIndex = 3;
+            this.rbSuma.TabIndex = 2;
             this.rbSuma.TabStop = true;
             this.rbSuma.Text = "+";
             this.rbSuma.UseVisualStyleBackColor = true;
@@ -86,7 +87,8 @@
             this.rbResta.Location = new System.Drawing.Point(266, 193);
             this.rbResta.Name = "rbResta";
             this.rbResta.Size = new System.Drawing.Size(30, 19);
-            this.rbResta.TabIndex = 4;
+            this.rbResta.TabIndex = 3;
+            this.rbResta.TabStop = true;
             this.rbResta.Text = "-";
             this.rbResta.UseVisualStyleBackColor = true;
             this.rbResta.CheckedChanged += new System.EventHandler(this.rbOperacion_CheckedChanged);
@@ -97,7 +99,8 @@
             this.rbMultiplicar.Location = new System.Drawing.Point(302, 193);
             this.rbMultiplicar.Name = "rbMultiplicar";
             this.rbMultiplicar.Size = new System.Drawing.Size(30, 19);
-            this.rbMultiplicar.TabIndex = 5;
+            this.rbMultiplicar.TabIndex = 4;
+            this.rbMultiplicar.TabStop = true;
             this.rbMultiplicar.Text = "*";
             this.rbMultiplicar.UseVisualStyleBackColor = true;
             this.rbMultiplicar.CheckedChanged += new System.EventHandler(this.rbOperacion_CheckedChanged);
@@ -108,7 +111,8 @@
             this.rbDivision.Location = new System.Drawing.Point(338, 193);
             this.rbDivision.Name = "rbDivision";
             this.rbDivision.Size = new System.Drawing.Size(30, 19);
-            this.rbDivision.TabIndex = 6;
+            this.rbDivision.TabIndex = 5;
+            this.rbDivision.TabStop = true;
             this.rbDivision.Text = "/";
             this.rbDivision.UseVisualStyleBackColor = true;
             this.rbDivision.CheckedChanged += new System.EventHandler(this.rbOperacion_CheckedChanged);
@@ -140,6 +144,7 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnOperar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(606, 396);
@@ -152,8 +157,9 @@
             this.Controls.Add(this.btnOperar);
             this.Controls.Add(this.txtNum2);
             this.Controls.Add(this.txtNum1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Ejercicio 4";
             this.ResumeLayout(false);
             this.PerformLayout();
 

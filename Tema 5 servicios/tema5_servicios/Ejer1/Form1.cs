@@ -19,25 +19,40 @@ namespace Ejer1
             DirectoryInfo[] subdirs;
             FileInfo[] files;
 
-            if (Directory.Exists(txtDireccion.Text))
+            string directorio = txtDireccion.Text;
+
+            if (directorio.StartsWith("%") && directorio.EndsWith("%"))
             {
-                dirActual = new DirectoryInfo(txtDireccion.Text);
-                subdirs = dirActual.GetDirectories();
-                files = dirActual.GetFiles();
+                directorio = Environment.GetEnvironmentVariable(directorio.Substring(1, directorio.Length - 2));
+                txtDireccion.Text = directorio;
+            }
 
-                if (dirActual.Parent != null)
+            if (Directory.Exists(directorio))
+            {
+                try
                 {
-                    listBoxDirectorios.Items.Add("..");
+                    dirActual = new DirectoryInfo(directorio);
+                    subdirs = dirActual.GetDirectories();
+                    files = dirActual.GetFiles();
+
+                    if (dirActual.Parent != null)
+                    {
+                        listBoxDirectorios.Items.Add("..");
+                    }
+
+                    for (int i = 0; i < subdirs.Length; i++)
+                    {
+                        listBoxDirectorios.Items.Add(subdirs[i].Name);
+                    }
+
+                    for (int i = 0; i < files.Length; i++)
+                    {
+                        listBoxArchivos.Items.Add(files[i].Name);
+                    }
                 }
-
-                for (int i = 0; i < subdirs.Length; i++)
+                catch (Exception ex)
                 {
-                    listBoxDirectorios.Items.Add(subdirs[i].Name);
-                }
-
-                for (int i = 0; i < files.Length; i++)
-                {
-                    listBoxArchivos.Items.Add(files[i].Name);
+                    MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -56,13 +71,14 @@ namespace Ejer1
                     lblNombreArchivo.Text = "Nombre: " + file.Name;
                     lblTamanoArchivo.Text = string.Format("Tamaño: {0:0.0###}KB", (file.Length / 1024));
                 }
-                catch (ArgumentNullException)
+                catch (ArgumentNullException ex)
                 {
+                    MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Console.WriteLine("La dirección está probablemente mal escrita");
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.ToString());
+                    MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -82,10 +98,17 @@ namespace Ejer1
                 btnCambiarDirectorio.PerformClick();
             } else
             {
-                DirectoryInfo di = new DirectoryInfo(txtDireccion.Text);
-                String parent = di.Parent.FullName;
-                txtDireccion.Text = parent;
-                btnCambiarDirectorio.PerformClick();
+                try
+                {
+                    DirectoryInfo di = new DirectoryInfo(txtDireccion.Text);
+                    String parent = di.Parent.FullName;
+                    txtDireccion.Text = parent;
+                    btnCambiarDirectorio.PerformClick();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.btnCambiarDirectorio = new System.Windows.Forms.Button();
             this.listBoxDirectorios = new System.Windows.Forms.ListBox();
@@ -127,8 +128,9 @@
             this.Controls.Add(this.listBoxDirectorios);
             this.Controls.Add(this.btnCambiarDirectorio);
             this.Controls.Add(this.txtDireccion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Ejer 1";
+            this.Text = "Navegador de sistema";
             this.ResumeLayout(false);
             this.PerformLayout();
 
