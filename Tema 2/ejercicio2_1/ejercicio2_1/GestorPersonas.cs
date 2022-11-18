@@ -11,6 +11,11 @@ namespace ejercicio2_1
     {
         private List<Persona> coleccionPersonas;
 
+        public GestorPersonas(List<Persona> coleccionPersonas)
+        {
+            ColeccionPersonas = coleccionPersonas;
+        }
+
         public List<Persona> ColeccionPersonas
         {
             set => coleccionPersonas = value;

@@ -50,7 +50,7 @@
             this.txtCadena.Location = new System.Drawing.Point(12, 10);
             this.txtCadena.Name = "txtCadena";
             this.txtCadena.PlaceholderText = "Escriba una cadena...";
-            this.txtCadena.Size = new System.Drawing.Size(591, 23);
+            this.txtCadena.Size = new System.Drawing.Size(582, 23);
             this.txtCadena.TabIndex = 0;
             // 
             // btnBuscar
@@ -77,11 +77,11 @@
             // 
             this.chkMayus.AutoSize = true;
             this.chkMayus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chkMayus.Location = new System.Drawing.Point(609, 15);
+            this.chkMayus.Location = new System.Drawing.Point(600, 14);
             this.chkMayus.Name = "chkMayus";
-            this.chkMayus.Size = new System.Drawing.Size(98, 19);
+            this.chkMayus.Size = new System.Drawing.Size(107, 19);
             this.chkMayus.TabIndex = 1;
-            this.chkMayus.Text = "¿Mayúsculas?";
+            this.chkMayus.Text = "Sensible mayus";
             this.chkMayus.UseVisualStyleBackColor = true;
             // 
             // txtExtensiones

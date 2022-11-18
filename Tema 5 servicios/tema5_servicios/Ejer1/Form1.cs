@@ -12,25 +12,65 @@ namespace Ejer1
 
         private void btnCambiarDirectorio_Click(object sender, EventArgs e)
         {
+            lblError.Visible = false;
             listBoxDirectorios.Items.Clear();
             listBoxArchivos.Items.Clear();
+            lblNombreArchivo.Text = "Nombre: ";
+            lblTamanoArchivo.Text = "Tamaño: ";
 
             DirectoryInfo dirActual;
             DirectoryInfo[] subdirs;
             FileInfo[] files;
-
             string directorio = txtDireccion.Text;
 
-            if (directorio.StartsWith("%") && directorio.EndsWith("%"))
-            {
-                directorio = Environment.GetEnvironmentVariable(directorio.Substring(1, directorio.Length - 2));
-                txtDireccion.Text = directorio;
-            }
-
-            if (Directory.Exists(directorio))
+            if (directorio.StartsWith("%") && directorio.EndsWith("%") && directorio.Length >= 3)
             {
                 try
                 {
+                    directorio = Environment.GetEnvironmentVariable(directorio.Substring(1, directorio.Length - 2));
+                    if (directorio == null)
+                    {
+                        lblError.Visible = true;
+                        lblError.Text = "No se ha encontrado la variable de entorno";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                txtDireccion.Text = directorio;
+            }
+
+            if (directorio == "..")
+            {
+                try
+                {
+                    DirectoryInfo aux = Directory.GetParent(directorio);
+                    if (aux == null)
+                    {
+                        lblError.Visible = true;
+                        lblError.Text = "No existe directorio padre";
+                    }
+                    else
+                    {
+                        Directory.SetCurrentDirectory("../");
+                        directorio = Directory.GetCurrentDirectory();
+                        lblDireccion.Text = Directory.GetCurrentDirectory();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }              
+            }
+            
+            if (Directory.Exists(directorio))
+            {
+                bool error = false;
+                try
+                {
+                    Directory.SetCurrentDirectory(directorio);
+                    txtDireccion.Text = Directory.GetCurrentDirectory();
                     dirActual = new DirectoryInfo(directorio);
                     subdirs = dirActual.GetDirectories();
                     files = dirActual.GetFiles();
@@ -49,12 +89,22 @@ namespace Ejer1
                     {
                         listBoxArchivos.Items.Add(files[i].Name);
                     }
+
+                    txtDireccion.Text = Directory.GetCurrentDirectory();
+                    txtDireccion.SelectionStart = txtDireccion.Text.Length;
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    error = true;
                 }
+            } else
+            {
+                lblError.Visible = true;
+                lblError.Text = "El directorio no existe";
             }
+
+            
         }
 
         private void listBoxArchivos_SelectedIndexChanged(object sender, EventArgs e)
@@ -92,18 +142,15 @@ namespace Ejer1
         {
             comprobarBarra();
 
-            if ((string) listBoxDirectorios.SelectedItem != "..")
+            if ((string) listBoxDirectorios.SelectedItem != ".." && listBoxDirectorios.SelectedIndex != -1)
             {
-                txtDireccion.Text += listBoxDirectorios.SelectedItem.ToString();
-                btnCambiarDirectorio.PerformClick();
+                    btnCambiarDirectorio.PerformClick();          
             } else
             {
                 try
                 {
-                    DirectoryInfo di = new DirectoryInfo(txtDireccion.Text);
-                    String parent = di.Parent.FullName;
-                    txtDireccion.Text = parent;
-                    btnCambiarDirectorio.PerformClick();
+                    DirectoryInfo di = new DirectoryInfo(Directory.GetCurrentDirectory());
+                    btnCambiarDirectorio.PerformClick();       
                 }
                 catch (Exception ex)
                 {

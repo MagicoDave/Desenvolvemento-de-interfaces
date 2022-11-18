@@ -8,6 +8,14 @@ namespace ejercicio2_1
 {
     internal class InterfazUsuario
     {
+
+        GestorPersonas gestor;
+
+        public InterfazUsuario()
+        {
+            this.gestor = new GestorPersonas(new List<Persona>());
+        }
+
         public void Inicio()
         {
             int opcion = 0;
@@ -72,7 +80,7 @@ namespace ejercicio2_1
             } while (seleccion != opciones.Length - 1); // Última opción Salir
         }
 
-        static void pintaMenu(string[] opciones, int opcion)
+        public void pintaMenu(string[] opciones, int opcion)
         {
             string titulo = "MENU";
 
@@ -94,7 +102,7 @@ namespace ejercicio2_1
 
         }
 
-        static void Insertar()
+        public void Insertar()
         {
             Console.Clear();
             Console.WriteLine("¿Desea introducir un nuevo directivo o empleado?");
@@ -106,7 +114,7 @@ namespace ejercicio2_1
                 bandera = int.TryParse(Console.ReadLine(), out opcion);
                 if (bandera)
                 {
-                    if (bandera != opcion > 3 || opcion < 1)
+                    if (opcion > 3 || opcion < 1)
                     {
                         Console.WriteLine("Parámetro fuera de rango, inténtelo de nuevo");
                         bandera = false;
@@ -118,10 +126,12 @@ namespace ejercicio2_1
                             case 1:
                                 Directivo directivo = new Directivo();
                                 directivo.introducirDatos();
+                                gestor.ColeccionPersonas.Add(directivo);
                                 break;
                             case 2:
                                 Empleado empleado = new Empleado();
                                 empleado.introducirDatos();
+                                gestor.ColeccionPersonas.Add(empleado);
                                 break;
                             default:
                                 break;
@@ -136,7 +146,7 @@ namespace ejercicio2_1
 
         }
 
-        static void Eliminar()
+        public void Eliminar()
         {
             int min, max;
             bool bandera;
@@ -160,6 +170,44 @@ namespace ejercicio2_1
                     Console.WriteLine("No se ha podido convertir a entero, inténtelo de nuevo");
                 }
             } while (!bandera);
+
+            for (int i = min + 1; i < max - 1; i++)
+            {
+                gestor.ColeccionPersonas[i].mostrarDatos();
+            }
+
+            Console.WriteLine("¿Desea borrar estos datos?");
+            bool respuesta = preguntaSiNo();
+
+            if (respuesta)
+            {
+                gestor.Eliminar(max, min);
+                Console.WriteLine("Datos eliminados");
+            }
+
+            Console.WriteLine();
+        }
+
+        public bool preguntaSiNo()
+        {
+            ConsoleKey response;
+            do
+            {
+                response = Console.ReadKey(false).Key;
+                if (response != ConsoleKey.Enter)
+                {
+                    Console.WriteLine();
+                }
+
+            } while (response != ConsoleKey.S && response != ConsoleKey.N);
+
+            if (response == ConsoleKey.S)
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
         }
     }
 

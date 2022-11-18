@@ -37,6 +37,8 @@
             this.lblArchivos = new System.Windows.Forms.Label();
             this.lblNombreArchivo = new System.Windows.Forms.Label();
             this.lblTamanoArchivo = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtDireccion
@@ -114,12 +116,33 @@
             this.lblTamanoArchivo.TabIndex = 7;
             this.lblTamanoArchivo.Text = "Tamaño: ";
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(12, 517);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(38, 15);
+            this.lblError.TabIndex = 8;
+            this.lblError.Text = "label1";
+            this.lblError.Visible = false;
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Location = new System.Drawing.Point(12, 473);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(0, 15);
+            this.lblDireccion.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnCambiarDirectorio;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 537);
+            this.Controls.Add(this.lblDireccion);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblTamanoArchivo);
             this.Controls.Add(this.lblNombreArchivo);
             this.Controls.Add(this.lblArchivos);
@@ -146,5 +169,7 @@
         private Label lblArchivos;
         private Label lblNombreArchivo;
         private Label lblTamanoArchivo;
+        private Label lblError;
+        private Label lblDireccion;
     }
 }
