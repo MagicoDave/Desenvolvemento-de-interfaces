@@ -9,13 +9,7 @@ namespace Ejer7
 
         private int[,] notas;
         private string[] alumnos;
-        public enum Asignaturas
-        {
-            Pociones,
-            Quidditch,
-            Criaturas,
-            ArtesOscuras
-        }
+        public string[] asignaturas = {"Pociones","Quidditch","Criaturas","Artes Oscuras"};
         public int[,] Notas
         {
             set => notas = value;
@@ -65,13 +59,38 @@ namespace Ejer7
             {
                 cboxAlumno.Items.Add(alumno);
             }
-            foreach (string asignatura in Enum.GetNames(typeof(Asignaturas)))
+            foreach (string asignatura in asignaturas)
             {
                 cboxAsignatura.Items.Add(asignatura);
             }
 
             //Rellenar notas con datos aleatorios
-            //TODO
+            Notas = new int[Alumnos.Length, asignaturas.Length];
+            Random generador = new Random();
+            for (int i = 0; i < Notas.GetLength(0); i++)
+            {
+                for (int j = 0; j < Notas.GetLength(1); j++)
+                {
+                    Notas[i, j] = generador.Next(0, 11);
+                }
+            }
+
+            //Generar la tabla
+            //Generar cabeceras
+            int x = 100;
+            int y = 50;
+
+
+            for (int i = 0; i < asignaturas.Length; i++)
+            {
+                Label lbl = new Label();
+                lbl.Text = asignaturas[i];
+                lbl.Location = new Point(x, y);
+                lbl.Size = new Size(80, 20);
+                panel1.Controls.Add(lbl);
+
+                x += 100;
+            }
 
         }
 
