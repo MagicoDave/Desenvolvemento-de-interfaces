@@ -27,10 +27,10 @@ namespace Ejer6
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                if (txtPin.Text.Equals(pin))
+                if (txtPin.Text == pin)
                 {
                     autentificacion = true;
-                    this.Close();
+                    this.DialogResult = DialogResult.OK;
                 }
                 else
                 {
@@ -39,7 +39,7 @@ namespace Ejer6
                     lblIntentos.Text = "Te queda(n) " + intentos + "intento(s)";
                     if (intentos == 0)
                     {
-                        Application.Exit();
+                        this.DialogResult = DialogResult.Cancel;
                     }
                 }
             }

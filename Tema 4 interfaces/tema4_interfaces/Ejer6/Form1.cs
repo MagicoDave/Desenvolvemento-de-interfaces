@@ -6,7 +6,7 @@ namespace Ejer6
     {
         int x = 50;
         int y = 100;
-        string[] textoBotones = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "*", "0", "#" };
+        string textoBotones = "123456789*0#";
         Button btn;
         TextBox txtMovil;
         Color colorDefault;
@@ -19,7 +19,7 @@ namespace Ejer6
             for (int i = 0; i < textoBotones.Length; i++)
             {
                 btn = new Button();
-                btn.Text = textoBotones[i];
+                btn.Text = textoBotones[i].ToString();
                 btn.Location = new Point(x, y);
                 btn.Size = new Size(50, 20);
                 btn.Enabled = true;
@@ -50,7 +50,14 @@ namespace Ejer6
             Form2 f2 = new Form2();
             f2.Text = "Login";
             f2.StartPosition = FormStartPosition.CenterScreen;
-            f2.ShowDialog();
+            DialogResult comprobacion = f2.ShowDialog();
+            if (comprobacion == DialogResult.OK)
+            {
+                f2.Close();
+            } else if (comprobacion == DialogResult.Cancel)
+            {
+                Application.Exit();
+            }
         }
 
         private void btnClick(object sender, EventArgs e)
@@ -80,16 +87,11 @@ namespace Ejer6
             txtMovil.Text = "";
             foreach (Control b in this.Controls)
             {
-                if (b.GetType().Equals(typeof(Button)))
+                if (b.GetType() == typeof(Button))
                 {
                     b.BackColor = colorDefault;
                 }
             }
-        }
-
-        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            btnReset.PerformClick();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -104,8 +106,6 @@ namespace Ejer6
                 MessageBoxButtons.OK, 
                 MessageBoxIcon.Information)
             ;
-
-
         }
 
         private void grabarNúmeroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -115,11 +115,17 @@ namespace Ejer6
 
         private void saveFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            StreamWriter s = new StreamWriter(saveFileDialog1.FileName, true);
-            s.Write("\n" + txtMovil.Text);
-            s.Close();
-
-
+            try
+            {
+                using(StreamWriter sr = new StreamWriter(saveFileDialog1.FileName, true))
+                {
+                    sr.Write("\n" + txtMovil.Text);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+            }
         }
     }
 }

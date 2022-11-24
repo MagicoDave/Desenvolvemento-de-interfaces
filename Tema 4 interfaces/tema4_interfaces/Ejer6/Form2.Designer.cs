@@ -38,6 +38,7 @@
             this.txtPin.Name = "txtPin";
             this.txtPin.Size = new System.Drawing.Size(100, 23);
             this.txtPin.TabIndex = 0;
+            this.txtPin.UseSystemPasswordChar = true;
             this.txtPin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // lblIntentos

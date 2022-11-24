@@ -89,7 +89,7 @@
             this.resetToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
             this.resetToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.resetToolStripMenuItem.Text = "Reset";
-            this.resetToolStripMenuItem.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
+            this.resetToolStripMenuItem.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // toolStripSeparator1
             // 
@@ -119,8 +119,11 @@
             // 
             // saveFileDialog1
             // 
+            this.saveFileDialog1.CheckFileExists = true;
             this.saveFileDialog1.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
+            this.saveFileDialog1.OverwritePrompt = false;
             this.saveFileDialog1.RestoreDirectory = true;
+            this.saveFileDialog1.ValidateNames = false;
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
             // Form1
