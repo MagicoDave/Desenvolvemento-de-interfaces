@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.cboxAlumno = new System.Windows.Forms.ComboBox();
             this.cboxAsignatura = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -38,6 +39,7 @@
             this.lblNotaMinima = new System.Windows.Forms.Label();
             this.lblAlumnos = new System.Windows.Forms.Label();
             this.lblAsignaturas = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // cboxAlumno
@@ -49,6 +51,7 @@
             this.cboxAlumno.Name = "cboxAlumno";
             this.cboxAlumno.Size = new System.Drawing.Size(300, 23);
             this.cboxAlumno.TabIndex = 0;
+            this.cboxAlumno.SelectedIndexChanged += new System.EventHandler(this.cboxAlumno_SelectedIndexChanged);
             // 
             // cboxAsignatura
             // 
@@ -59,6 +62,7 @@
             this.cboxAsignatura.Name = "cboxAsignatura";
             this.cboxAsignatura.Size = new System.Drawing.Size(300, 23);
             this.cboxAsignatura.TabIndex = 1;
+            this.cboxAsignatura.SelectedIndexChanged += new System.EventHandler(this.cboxAsignatura_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -166,5 +170,6 @@
         private Label lblNotaMinima;
         private Label lblAlumnos;
         private Label lblAsignaturas;
+        private ToolTip toolTip1;
     }
 }

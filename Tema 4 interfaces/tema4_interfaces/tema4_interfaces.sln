@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejer5", "Ejer5\Ejer5.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejer6", "Ejer6\Ejer6.csproj", "{321D16E4-04AB-4BA0-B49D-6E0ADA9225F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer7", "Ejer7\Ejer7.csproj", "{919B1A5A-B002-407C-BB0D-905A19358C84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejer7", "Ejer7\Ejer7.csproj", "{919B1A5A-B002-407C-BB0D-905A19358C84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer8", "Ejer8\Ejer8.csproj", "{64832D45-48AF-4F72-BDA5-EB09AC1B718A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{919B1A5A-B002-407C-BB0D-905A19358C84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{919B1A5A-B002-407C-BB0D-905A19358C84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{919B1A5A-B002-407C-BB0D-905A19358C84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64832D45-48AF-4F72-BDA5-EB09AC1B718A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64832D45-48AF-4F72-BDA5-EB09AC1B718A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64832D45-48AF-4F72-BDA5-EB09AC1B718A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64832D45-48AF-4F72-BDA5-EB09AC1B718A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
