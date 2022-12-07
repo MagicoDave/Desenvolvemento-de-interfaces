@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\David Casalderrey\\.nuget\\packages\\": {}
+    "C:\\Users\\alumnoinfo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer5\\Ejer5.csproj",
+      "projectUniqueName": "C:\\Users\\alumnoinfo\\source\\repos\\Desenvolvemento-de-interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer5\\Ejer5.csproj",
       "projectName": "Ejer5",
-      "projectPath": "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer5\\Ejer5.csproj",
-      "packagesPath": "C:\\Users\\David Casalderrey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer5\\obj\\",
+      "projectPath": "C:\\Users\\alumnoinfo\\source\\repos\\Desenvolvemento-de-interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer5\\Ejer5.csproj",
+      "packagesPath": "C:\\Users\\alumnoinfo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alumnoinfo\\source\\repos\\Desenvolvemento-de-interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\David Casalderrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alumnoinfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

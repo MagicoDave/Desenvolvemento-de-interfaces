@@ -15,3 +15,20 @@ C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 interfaces\
 C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.pdb
 C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.genruntimeconfig.cache
 C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\ref\Ejer7.dll
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\bin\Debug\net6.0-windows\Ejer7.exe
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\bin\Debug\net6.0-windows\Ejer7.deps.json
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\bin\Debug\net6.0-windows\Ejer7.runtimeconfig.json
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\bin\Debug\net6.0-windows\Ejer7.dll
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\bin\Debug\net6.0-windows\Ejer7.pdb
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.csproj.AssemblyReference.cache
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.Form1.resources
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.csproj.GenerateResource.cache
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.AssemblyInfoInputs.cache
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.AssemblyInfo.cs
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.csproj.CoreCompileInputs.cache
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.dll
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\refint\Ejer7.dll
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.pdb
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\Ejer7.genruntimeconfig.cache
+C:\Users\alumnoinfo\source\repos\Desenvolvemento-de-interfaces\Tema 4 interfaces\tema4_interfaces\Ejer7\obj\Debug\net6.0-windows\ref\Ejer7.dll
