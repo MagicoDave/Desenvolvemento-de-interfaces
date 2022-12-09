@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cboxAlumno = new System.Windows.Forms.ComboBox();
             this.cboxAsignatura = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -151,6 +152,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cboxAsignatura);
             this.Controls.Add(this.cboxAlumno);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Aula";
             this.ResumeLayout(false);

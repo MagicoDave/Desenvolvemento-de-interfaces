@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnAbrir = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
@@ -38,6 +39,7 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblTamano = new System.Windows.Forms.Label();
             this.lblResolucion = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // btnAbrir
@@ -47,6 +49,7 @@
             this.btnAbrir.Size = new System.Drawing.Size(75, 23);
             this.btnAbrir.TabIndex = 1;
             this.btnAbrir.Text = "Abrir";
+            this.toolTip1.SetToolTip(this.btnAbrir, "Elige un directorio para visualizar sus imágenes");
             this.btnAbrir.UseVisualStyleBackColor = true;
             this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
             // 
@@ -74,7 +77,9 @@
             this.btnRetroceso.Size = new System.Drawing.Size(75, 23);
             this.btnRetroceso.TabIndex = 0;
             this.btnRetroceso.Text = "Retroceder";
+            this.toolTip1.SetToolTip(this.btnRetroceso, "Muestra la imagen anterior");
             this.btnRetroceso.UseVisualStyleBackColor = true;
+            this.btnRetroceso.Click += new System.EventHandler(this.btnRetroceso_Click);
             // 
             // btnAvanzar
             // 
@@ -84,7 +89,9 @@
             this.btnAvanzar.Size = new System.Drawing.Size(75, 23);
             this.btnAvanzar.TabIndex = 2;
             this.btnAvanzar.Text = "Avanzar";
+            this.toolTip1.SetToolTip(this.btnAvanzar, "Muestra la imagen siguiente");
             this.btnAvanzar.UseVisualStyleBackColor = true;
+            this.btnAvanzar.Click += new System.EventHandler(this.btnAvanzar_Click);
             // 
             // lblDirectorio
             // 
@@ -142,8 +149,11 @@
             this.Controls.Add(this.btnAbrir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Visor de imágenes";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +170,6 @@
         private Label lblNombre;
         private Label lblTamano;
         private Label lblResolucion;
+        private ToolTip toolTip1;
     }
 }

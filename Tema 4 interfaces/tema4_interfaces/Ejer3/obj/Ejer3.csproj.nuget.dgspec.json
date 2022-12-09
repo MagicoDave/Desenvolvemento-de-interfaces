@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alumnoinfo\\source\\repos\\Desenvolvemento-de-interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer3\\Ejer3.csproj": {}
+    "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer3\\Ejer3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alumnoinfo\\source\\repos\\Desenvolvemento-de-interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer3\\Ejer3.csproj": {
+    "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer3\\Ejer3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alumnoinfo\\source\\repos\\Desenvolvemento-de-interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer3\\Ejer3.csproj",
+        "projectUniqueName": "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer3\\Ejer3.csproj",
         "projectName": "Ejer3",
-        "projectPath": "C:\\Users\\alumnoinfo\\source\\repos\\Desenvolvemento-de-interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer3\\Ejer3.csproj",
-        "packagesPath": "C:\\Users\\alumnoinfo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alumnoinfo\\source\\repos\\Desenvolvemento-de-interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer3\\obj\\",
+        "projectPath": "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer3\\Ejer3.csproj",
+        "packagesPath": "C:\\Users\\David Casalderrey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 4 interfaces\\tema4_interfaces\\Ejer3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alumnoinfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\David Casalderrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -85,7 +85,6 @@ namespace Ejer7
                 panel1.Controls.Add(lbl);
 
                 y += 50;
-                //soiefhsofs
             }
 
             //Colocar notas
