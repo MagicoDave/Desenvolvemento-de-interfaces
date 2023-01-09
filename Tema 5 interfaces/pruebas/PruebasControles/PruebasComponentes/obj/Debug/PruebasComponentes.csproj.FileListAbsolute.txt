@@ -1,0 +1,14 @@
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\bin\Debug\PruebasComponentes.exe.config
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\bin\Debug\PruebasComponentes.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\bin\Debug\PruebasComponentes.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\obj\Debug\PruebasComponentes.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\obj\Debug\PruebasComponentes.csproj.SuggestedBindingRedirects.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\obj\Debug\PruebasComponentes.Properties.Resources.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\obj\Debug\PruebasComponentes.csproj.GenerateResource.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\obj\Debug\PruebasComponentes.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\obj\Debug\PruebasComponentes.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\obj\Debug\PruebasComponentes.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\bin\Debug\PruebasControles.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\bin\Debug\PruebasControles.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\obj\Debug\PruebasComponentes.Form1.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasComponentes\obj\Debug\PruebasComponentes.csproj.CopyComplete

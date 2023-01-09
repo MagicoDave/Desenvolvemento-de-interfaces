@@ -1,0 +1,8 @@
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasControles\bin\Debug\PruebasControles.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasControles\bin\Debug\PruebasControles.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasControles\obj\Debug\NuevosComponentes.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasControles\obj\Debug\PruebasControles.LabelTextbox.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasControles\obj\Debug\NuevosComponentes.csproj.GenerateResource.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasControles\obj\Debug\NuevosComponentes.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasControles\obj\Debug\PruebasControles.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\pruebas\PruebasControles\PruebasControles\obj\Debug\PruebasControles.pdb
