@@ -1,0 +1,9 @@
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Tema 5 interfaces\bin\Debug\Tema 5 interfaces.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Tema 5 interfaces\bin\Debug\Tema 5 interfaces.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Tema 5 interfaces\obj\Debug\Componentes.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Tema 5 interfaces\obj\Debug\Tema_5_interfaces.Properties.Resources.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Tema 5 interfaces\obj\Debug\Tema_5_interfaces.SimpleMediaPlayer.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Tema 5 interfaces\obj\Debug\Componentes.csproj.GenerateResource.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Tema 5 interfaces\obj\Debug\Componentes.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Tema 5 interfaces\obj\Debug\Tema 5 interfaces.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Tema 5 interfaces\obj\Debug\Tema 5 interfaces.pdb

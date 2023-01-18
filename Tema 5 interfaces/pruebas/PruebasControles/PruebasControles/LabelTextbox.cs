@@ -35,6 +35,7 @@ namespace PruebasControles
                 {
                     posicion = value;
                     recolocar();
+                    OnPosicionChanged(EventArgs.Empty);
                 }
                 else
                 {
@@ -59,6 +60,7 @@ namespace PruebasControles
                 {
                     separacion = value;
                     recolocar();
+                    OnSeparacionChanged(EventArgs.Empty);
                 }
                 else
                 {
@@ -99,22 +101,50 @@ namespace PruebasControles
             }
         }
 
+        
+        [Category("Appearance")]
+        [Description("Indica el caracter usado para enmascarar contraseñas del TextBox del componente")]
+        public char PswChr
+        {
+            set
+            {
+                txt.PasswordChar = value;
+            }
+            get
+            {
+                return txt.PasswordChar;
+            }
+        }
+
+        [Category("Appearance")]
+        [Description("Indica si el TextBox del componente es una contraseña")]
+        public bool Psw
+        {
+            set
+            {
+                txt.UseSystemPasswordChar = value;
+            }
+            get
+            {
+                return txt.UseSystemPasswordChar;
+            }
+        }
+
         void recolocar() 
         {
             switch (posicion)
             {
                 case ePosicion.IZQUIERDA:
                     lblTxt.Location = new Point(0, 0); //Posicion lblTxT
-                    txt.Location = new Point(lblTxt.Width + Separacion, 0); //Posicion txt
-                    txt.Width = this.Width - lblTxt.Width - Separacion; //Ancho txt
+                    txt.Location = new Point(lblTxt.Width + Separacion, 0); //Posicion txt   
                     break;
                 case ePosicion.DERECHA:
                     txt.Location = new Point(0, 0); //Posicion txt
-                    txt.Width = this.Width - lblTxt.Width - Separacion; //Ancho txt
                     lblTxt.Location = new Point(txt.Width + Separacion, 0); //Posicion lblTxt
                     break;
             }
 
+            this.Width = txt.Width + lblTxt.Width + Separacion; //Ancho componente
             this.Height = Math.Max(txt.Height, lblTxt.Height); //Altura del componente
         }
 
@@ -122,6 +152,49 @@ namespace PruebasControles
         {
             base.OnSizeChanged(e);
             recolocar();
+        }
+
+        [Category("La propiedad cambió")]
+        [Description("Se lanza cuando la propiedad Posicion cambia")]
+        public event System.EventHandler PosicionChanged;
+
+        protected virtual void OnPosicionChanged(EventArgs e)
+        {
+            PosicionChanged?.Invoke(this, e);
+        }
+
+        [Category("La propiedad cambió")]
+        [Description("Se lanza cuando la propiedad Separacion cambia")]
+        public event System.EventHandler SeparacionChanged;
+
+        protected virtual void OnSeparacionChanged(EventArgs e)
+        {
+            SeparacionChanged?.Invoke(this, e);
+        }
+
+        [Category("Evento personalizado")]
+        [Description("Se lanza cuando sucede el evento TextChanged del textbox interno")]
+        public event System.EventHandler TxtChanged;
+
+        protected virtual void OnTxtChanged(EventArgs e)
+        {
+            TxtChanged?.Invoke(this, e);
+        }
+
+        private void txt_KeyUp(object sender, KeyEventArgs e)
+        {
+            this.OnKeyUp(e);
+        }
+
+        protected override void OnKeyUp(KeyEventArgs e)
+        {
+            base.OnKeyUp(e);
+            Console.WriteLine(e.KeyValue);
+        }
+
+        private void txt_TextChanged(object sender, EventArgs e)
+        {
+            this.OnTxtChanged(e);
         }
     }
 }
