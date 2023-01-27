@@ -1,0 +1,17 @@
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\bin\Debug\net6.0-windows\ejer1 client.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\bin\Debug\net6.0-windows\ejer1 client.deps.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\bin\Debug\net6.0-windows\ejer1 client.runtimeconfig.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\bin\Debug\net6.0-windows\ejer1 client.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\bin\Debug\net6.0-windows\ejer1 client.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\ejer1 client.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\ejer1_client.Form1.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\ejer1 client.csproj.GenerateResource.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\ejer1 client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\ejer1 client.AssemblyInfoInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\ejer1 client.AssemblyInfo.cs
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\ejer1 client.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\ejer1 client.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\refint\ejer1 client.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\ejer1 client.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\ejer1 client.genruntimeconfig.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ejer1 client\obj\Debug\net6.0-windows\ref\ejer1 client.dll

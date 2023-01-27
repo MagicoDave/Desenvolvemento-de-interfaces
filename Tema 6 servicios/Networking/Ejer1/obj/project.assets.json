@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 6 servicios\\Networking\\Ejer1\\Ejer1.csproj",
-      "projectName": "Ejer1",
-      "projectPath": "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 6 servicios\\Networking\\Ejer1\\Ejer1.csproj",
+      "projectUniqueName": "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 6 servicios\\Networking\\Ejer1\\ejer1 server.csproj",
+      "projectName": "ejer1 server",
+      "projectPath": "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 6 servicios\\Networking\\Ejer1\\ejer1 server.csproj",
       "packagesPath": "C:\\Users\\David Casalderrey\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\David Casalderrey\\Documents\\Desarrollo de interfaces\\Tema 6 servicios\\Networking\\Ejer1\\obj\\",
       "projectStyle": "PackageReference",

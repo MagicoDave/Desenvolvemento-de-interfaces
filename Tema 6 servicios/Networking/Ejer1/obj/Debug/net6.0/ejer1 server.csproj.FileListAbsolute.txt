@@ -1,0 +1,15 @@
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\bin\Debug\net6.0\ejer1 server.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\bin\Debug\net6.0\ejer1 server.deps.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\bin\Debug\net6.0\ejer1 server.runtimeconfig.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\bin\Debug\net6.0\ejer1 server.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\bin\Debug\net6.0\ejer1 server.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\obj\Debug\net6.0\ejer1 server.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\obj\Debug\net6.0\ejer1 server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\obj\Debug\net6.0\ejer1 server.AssemblyInfoInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\obj\Debug\net6.0\ejer1 server.AssemblyInfo.cs
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\obj\Debug\net6.0\ejer1 server.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\obj\Debug\net6.0\ejer1 server.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\obj\Debug\net6.0\refint\ejer1 server.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\obj\Debug\net6.0\ejer1 server.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\obj\Debug\net6.0\ejer1 server.genruntimeconfig.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\Ejer1\obj\Debug\net6.0\ref\ejer1 server.dll

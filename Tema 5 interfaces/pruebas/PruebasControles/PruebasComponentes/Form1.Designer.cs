@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.txtSeparacion = new System.Windows.Forms.TextBox();
@@ -81,11 +82,11 @@
             this.etiquetaAviso3.ColorSecundario = System.Drawing.Color.LightBlue;
             this.etiquetaAviso3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.etiquetaAviso3.Gradiente = true;
-            this.etiquetaAviso3.ImagenMarca = "C:\\Users\\David Casalderrey\\Downloads\\logoDave.jpg";
+            this.etiquetaAviso3.ImagenMarca = null;
             this.etiquetaAviso3.Location = new System.Drawing.Point(332, 372);
             this.etiquetaAviso3.Marca = PruebasControles.eMarca.Imagen;
             this.etiquetaAviso3.Name = "etiquetaAviso3";
-            this.etiquetaAviso3.Size = new System.Drawing.Size(349, 33);
+            this.etiquetaAviso3.Size = new System.Drawing.Size(318, 33);
             this.etiquetaAviso3.TabIndex = 4;
             this.etiquetaAviso3.Text = "Esto va a ser una imagen";
             this.etiquetaAviso3.ClickEnMarca += new System.EventHandler(this.etiquetaAviso3_ClickEnMarca);
@@ -107,15 +108,15 @@
             // 
             // etiquetaAviso1
             // 
-            this.etiquetaAviso1.ColorPrincipal = System.Drawing.Color.Maroon;
-            this.etiquetaAviso1.ColorSecundario = System.Drawing.Color.LightBlue;
-            this.etiquetaAviso1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.etiquetaAviso1.ColorPrincipal = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.etiquetaAviso1.ColorSecundario = System.Drawing.Color.Cyan;
+            this.etiquetaAviso1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.etiquetaAviso1.Gradiente = true;
-            this.etiquetaAviso1.ImagenMarca = null;
-            this.etiquetaAviso1.Location = new System.Drawing.Point(448, 259);
-            this.etiquetaAviso1.Marca = PruebasControles.eMarca.Cruz;
+            this.etiquetaAviso1.ImagenMarca = ((System.Drawing.Image)(resources.GetObject("etiquetaAviso1.ImagenMarca")));
+            this.etiquetaAviso1.Location = new System.Drawing.Point(59, 179);
+            this.etiquetaAviso1.Marca = PruebasControles.eMarca.Imagen;
             this.etiquetaAviso1.Name = "etiquetaAviso1";
-            this.etiquetaAviso1.Size = new System.Drawing.Size(233, 28);
+            this.etiquetaAviso1.Size = new System.Drawing.Size(679, 80);
             this.etiquetaAviso1.TabIndex = 2;
             this.etiquetaAviso1.Text = "Un aviso importante";
             this.etiquetaAviso1.ClickEnMarca += new System.EventHandler(this.etiquetaAviso1_ClickEnMarca);

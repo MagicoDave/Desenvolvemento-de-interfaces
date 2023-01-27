@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PruebasControles
@@ -25,7 +19,7 @@ namespace PruebasControles
     {
 
         private eMarca marca = eMarca.Nada;
-        private string imagenMarca;
+        private Image imagenMarca;
         private Color colorPrincipal = Color.White;
         private Color colorSecundario = Color.LightBlue;
         private bool gradiente = true;
@@ -47,8 +41,8 @@ namespace PruebasControles
         }
 
         [Category("Appareance")]
-        [Description("Indica la ruta de la imagen que se mostrará si se escoge la marca 'Imagen'")]
-        public string ImagenMarca
+        [Description("Indica la imagen que se mostrará si se escoge la marca 'Imagen'")]
+        public Image ImagenMarca
         {
             set 
             {
@@ -122,8 +116,6 @@ namespace PruebasControles
             int offsetY = 0; //Desplazamiento a la izquierda del texto
             int h = this.Font.Height; //Altura de la fuente
 
-            Bitmap bm = null;
-
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
             switch (Marca)
@@ -139,16 +131,9 @@ namespace PruebasControles
                     offsetY = grosor / 2;
                     break;
                 case eMarca.Imagen:
-                    if (File.Exists(imagenMarca)){
-                        try
-                        {
-                            offsetX = h;
-                            bm = new Bitmap(imagenMarca);
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine(ex.Message);
-                        }   
+                    if (ImagenMarca != null)
+                    {
+                        offsetX = h;
                     }
                     break;
             }
@@ -179,9 +164,9 @@ namespace PruebasControles
                     lapiz.Dispose();
                     break;
                 case eMarca.Imagen:
-                    if (bm != null)
+                    if (ImagenMarca != null)
                     {
-                        g.DrawImage(bm, new Rectangle(0, 0, h, h));
+                        g.DrawImage(ImagenMarca, new Rectangle(0, 0, h, h));
                     }
                     break;
             }
