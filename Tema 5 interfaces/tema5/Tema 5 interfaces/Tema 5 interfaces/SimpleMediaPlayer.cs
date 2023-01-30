@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
+using Tema_5_interfaces.Properties;
+using System.Runtime.Remoting.Channels;
 
 namespace Tema_5_interfaces
 {
@@ -17,6 +19,7 @@ namespace Tema_5_interfaces
 
         private int mm = 0;
         private int ss = 0;
+        bool isPlaying = false;
 
         [Category("Value")]
         [Description("Valor del campo 'minutos'")]
@@ -68,8 +71,6 @@ namespace Tema_5_interfaces
             }
         }
 
-
-
         public SimpleMediaPlayer()
         {
             InitializeComponent();
@@ -84,6 +85,31 @@ namespace Tema_5_interfaces
         {
             MM += 1;
             SS = 0;
+        }
+
+        [Category("Action")]
+        [Description("Se lanza cuando se hace click sobre el botón de play")]
+        public event System.EventHandler PlayClick;
+
+        protected virtual void OnPlayClick(EventArgs e)
+        {
+            PlayClick?.Invoke(this, e);
+            
+        }
+
+        private void btnPlayPause_Click(object sender, EventArgs e)
+        {
+            if (!isPlaying)
+            {
+                btnPlayPause.Image = Resources.pausebutton;
+                isPlaying = true;
+            }
+            else
+            {
+                btnPlayPause.Image = Resources.playbutton;
+                isPlaying = false;
+            }
+            OnPlayClick(e);
         }
     }
 }

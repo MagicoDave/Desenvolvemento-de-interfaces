@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tema 5 interfaces\Componentes.csproj">
+      <Project>{9275E1FC-FA3A-400F-8793-E6303330BE14}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,14 @@
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\bin\Debug\Aplicacion.exe.config
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\bin\Debug\Aplicacion.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\bin\Debug\Aplicacion.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\bin\Debug\Tema 5 interfaces.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\bin\Debug\Tema 5 interfaces.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\obj\Debug\Aplicacion.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\obj\Debug\Aplicacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\obj\Debug\Aplicacion.Ejer3.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\obj\Debug\Aplicacion.Properties.Resources.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\obj\Debug\Aplicacion.csproj.GenerateResource.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\obj\Debug\Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\obj\Debug\Aplicacion.csproj.CopyComplete
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\obj\Debug\Aplicacion.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 5 interfaces\tema5\Tema 5 interfaces\Aplicacion\obj\Debug\Aplicacion.pdb
