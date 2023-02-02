@@ -52,10 +52,19 @@
     <Compile Include="Ejer3.Designer.cs">
       <DependentUpon>Ejer3.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAhorcado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAhorcado.Designer.cs">
+      <DependentUpon>FormAhorcado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Ejer3.resx">
       <DependentUpon>Ejer3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAhorcado.resx">
+      <DependentUpon>FormAhorcado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

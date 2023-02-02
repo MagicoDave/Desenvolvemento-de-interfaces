@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using System.Text.RegularExpressions;
 using Tema_5_interfaces.Properties;
-using System.Runtime.Remoting.Channels;
 
 namespace Tema_5_interfaces
 {
@@ -27,10 +18,10 @@ namespace Tema_5_interfaces
         {
             set
             {
-                if (mm > 59)
+                if (value > 59)
                 {
                     mm = 0;
-                } else if (mm < 0)
+                } else if (value < 0)
                 {
                     throw new ArgumentException("MM no puede ser menor que 0");
                 } else
@@ -52,10 +43,11 @@ namespace Tema_5_interfaces
         {
             set
             {
-                if (ss > 59)
+                if (value > 59)
                 {
-                    DesbordaTiempo();
-                } else if (ss <0)
+                    ss = value % 60;
+                    OnDesbordaTiempo(EventArgs.Empty);
+                } else if (value < 0)
                 {
                     throw new ArgumentException("SS no puede ser menor que 0");
                 } else
@@ -81,12 +73,6 @@ namespace Tema_5_interfaces
             lblTiempo.Text = $"{MM:00}:{SS:00}";
         }
 
-        public void DesbordaTiempo()
-        {
-            MM += 1;
-            SS = 0;
-        }
-
         [Category("Action")]
         [Description("Se lanza cuando se hace click sobre el botón de play")]
         public event System.EventHandler PlayClick;
@@ -94,7 +80,15 @@ namespace Tema_5_interfaces
         protected virtual void OnPlayClick(EventArgs e)
         {
             PlayClick?.Invoke(this, e);
-            
+        }
+
+        [Category("Behavior")]
+        [Description("Se lanza cuando los segundos pasan de 59")]
+        public event System.EventHandler DesbordaTiempo;
+
+        protected virtual void OnDesbordaTiempo(EventArgs e)
+        {
+            DesbordaTiempo?.Invoke(this, e);
         }
 
         private void btnPlayPause_Click(object sender, EventArgs e)

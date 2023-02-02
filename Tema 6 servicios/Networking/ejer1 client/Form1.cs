@@ -24,7 +24,7 @@ namespace ejer1_client
             try
             {
                 ie = new IPEndPoint(IPAddress.Parse(ip), port);
-                Socket server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                 server.Connect(ie);
                 Debug.WriteLine("Server conection status: " + server.Connected);
             }
@@ -71,8 +71,9 @@ namespace ejer1_client
         {
             if (sender == txtIP)
             {
-                ip = ((TextBox) sender).Text;
-            } else if (sender == txtPort)
+                ip = ((TextBox)sender).Text;
+            }
+            else if (sender == txtPort)
             {
                 int aux = 0;
                 if (Int32.TryParse((((TextBox)sender).Text), out aux))

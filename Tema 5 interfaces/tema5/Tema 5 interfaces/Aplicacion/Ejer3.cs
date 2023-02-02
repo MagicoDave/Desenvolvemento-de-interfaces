@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Aplicacion
@@ -26,40 +21,36 @@ namespace Aplicacion
         {
             folderBrowserDialog1.ShowDialog();
 
-            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
-            {
-                DirectoryInfo directorio = new DirectoryInfo(folderBrowserDialog1.SelectedPath);
-                FileInfo[] files = directorio.GetFiles();
-                imagenes = new List<FileInfo>();
-                smpControl.SS = 0;
-                smpControl.MM = 0;
-                imageIndex = 0;
+            DirectoryInfo directorio = new DirectoryInfo(folderBrowserDialog1.SelectedPath);
+            FileInfo[] files = directorio.GetFiles();
+            imagenes = new List<FileInfo>();
+            smpControl.SS = 0;
+            smpControl.MM = 0;
+            imageIndex = 0;
 
-                for (int i = 0; i < files.Length; i++)
+            for (int i = 0; i < files.Length; i++)
+            {
+                for (int j = 0; j < extensiones.Length; j++)
                 {
-                    for (int j = 0; j < extensiones.Length; j++)
+                    if (files[i].Name.EndsWith(extensiones[j]))
                     {
-                        if (files[i].Name.EndsWith(extensiones[j]))
-                        {
-                            imagenes.Add(files[i]);
-                        }
+                        imagenes.Add(files[i]);
                     }
                 }
-
-                if (imagenes.Count > 0)
-                {
-                    pbDisplay.Image = Image.FromFile(imagenes[imageIndex].FullName);
-                }
-
             }
-            
+
+            if (imagenes.Count > 0)
+            {
+                pbDisplay.Image = Image.FromFile(imagenes[imageIndex].FullName);
+            }
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             smpControl.SS++;
 
-            if (smpControl.SS % 2 == 0)
+            if (smpControl.SS % 2 == 0 && imagenes != null)
             {
                 imageIndex++;
                 if (imageIndex >= imagenes.Count)
@@ -75,10 +66,16 @@ namespace Aplicacion
             if (timer1.Enabled)
             {
                 timer1.Stop();
-            } else
+            }
+            else
             {
                 timer1.Start();
             }
+        }
+
+        private void smpControl_DesbordaTiempo(object sender, EventArgs e)
+        {
+            smpControl.MM++;
         }
     }
 }

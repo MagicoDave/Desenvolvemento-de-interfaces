@@ -67,12 +67,14 @@
             this.smpControl.MM = 0;
             this.smpControl.Name = "smpControl";
             this.smpControl.Size = new System.Drawing.Size(135, 66);
-            this.smpControl.SS = 0;
-            this.smpControl.TabIndex = 3;
+            this.smpControl.SS = 40;
+            this.smpControl.TabIndex = 0;
             this.smpControl.PlayClick += new System.EventHandler(this.smpControl_PlayClick);
+            this.smpControl.DesbordaTiempo += new System.EventHandler(this.smpControl_DesbordaTiempo);
             // 
             // Ejer3
             // 
+            this.AcceptButton = this.btnDirectory;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(866, 530);
