@@ -111,7 +111,7 @@
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.btnAdd);
             this.Name = "Form1";
-            this.Text = "Ejercicio 2";
+            this.Text = "telnetUI";
             this.ResumeLayout(false);
             this.PerformLayout();
 
