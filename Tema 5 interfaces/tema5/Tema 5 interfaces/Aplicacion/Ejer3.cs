@@ -11,6 +11,7 @@ namespace Aplicacion
         List<FileInfo> imagenes;
         string[] extensiones = { ".jpg", ".jpeg", ".png", ".gif", ".tif" };
         int imageIndex = 0;
+        FormAhorcado formAhorcado;
 
         public Ejer3()
         {
@@ -76,6 +77,12 @@ namespace Aplicacion
         private void smpControl_DesbordaTiempo(object sender, EventArgs e)
         {
             smpControl.MM++;
+        }
+
+        private void btnAhorcado_Click(object sender, EventArgs e)
+        {
+            formAhorcado = new FormAhorcado();
+            formAhorcado.Show();
         }
     }
 }

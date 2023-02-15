@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnList = new System.Windows.Forms.Button();
             this.btnServer = new System.Windows.Forms.Button();
@@ -110,8 +111,10 @@
             this.Controls.Add(this.btnServer);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.btnAdd);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "telnetUI";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -4,8 +4,20 @@ namespace chatroom_server
 {
     internal class Usuario
     {
-        Socket s;
-        string alias;
+        private Socket s;
+        private string alias;
+
+        public Socket Socket
+        {
+            set { s = value; }
+            get { return s; }
+        }
+
+        public string Alias
+        {
+            set { alias = value; }
+            get { return alias;}
+        }
 
         public Usuario(Socket s)
         {

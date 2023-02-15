@@ -6,6 +6,12 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <PackageIcon></PackageIcon>
+    <ApplicationIcon>monster_spooky_pumpkin_halloween_icon_229389.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="monster_spooky_pumpkin_halloween_icon_229389.ico" />
+  </ItemGroup>
 
 </Project>

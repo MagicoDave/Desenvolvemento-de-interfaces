@@ -25,11 +25,11 @@ namespace Tema_5_interfaces
             { 
                 errores = value;
                 OnCambiaError(EventArgs.Empty);
+                this.Refresh();
                 if (errores >= 10)
                 {
                     OnAhorcado(EventArgs.Empty);
                 }
-                this.Refresh();
             }
             get { return errores; }
         }

@@ -33,6 +33,8 @@
             this.btnDirectory = new System.Windows.Forms.Button();
             this.pbDisplay = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnAhorcado = new System.Windows.Forms.Button();
+            this.validateTextBox1 = new Tema_5_interfaces.ValidateTextBox();
             this.smpControl = new Tema_5_interfaces.SimpleMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.pbDisplay)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +63,26 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnAhorcado
+            // 
+            this.btnAhorcado.Location = new System.Drawing.Point(773, 504);
+            this.btnAhorcado.Name = "btnAhorcado";
+            this.btnAhorcado.Size = new System.Drawing.Size(81, 23);
+            this.btnAhorcado.TabIndex = 3;
+            this.btnAhorcado.Text = "supercorbata";
+            this.btnAhorcado.UseVisualStyleBackColor = true;
+            this.btnAhorcado.Click += new System.EventHandler(this.btnAhorcado_Click);
+            // 
+            // validateTextBox1
+            // 
+            this.validateTextBox1.Location = new System.Drawing.Point(277, 475);
+            this.validateTextBox1.Multilinea = false;
+            this.validateTextBox1.Name = "validateTextBox1";
+            this.validateTextBox1.Size = new System.Drawing.Size(355, 40);
+            this.validateTextBox1.TabIndex = 4;
+            this.validateTextBox1.Texto = "";
+            this.validateTextBox1.Tipo = Tema_5_interfaces.eTipo.Textual;
+            // 
             // smpControl
             // 
             this.smpControl.Location = new System.Drawing.Point(12, 452);
@@ -78,6 +100,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(866, 530);
+            this.Controls.Add(this.validateTextBox1);
+            this.Controls.Add(this.btnAhorcado);
             this.Controls.Add(this.smpControl);
             this.Controls.Add(this.pbDisplay);
             this.Controls.Add(this.btnDirectory);
@@ -94,6 +118,8 @@
         private System.Windows.Forms.PictureBox pbDisplay;
         private Tema_5_interfaces.SimpleMediaPlayer smpControl;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnAhorcado;
+        private Tema_5_interfaces.ValidateTextBox validateTextBox1;
     }
 }
 
