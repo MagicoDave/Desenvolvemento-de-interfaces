@@ -37,6 +37,7 @@
             this.txt.Name = "txt";
             this.txt.Size = new System.Drawing.Size(104, 20);
             this.txt.TabIndex = 0;
+            this.txt.TextChanged += new System.EventHandler(this.txt_TextChanged);
             // 
             // ValidateTextBox
             // 

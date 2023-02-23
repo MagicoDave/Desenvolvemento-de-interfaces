@@ -22,29 +22,32 @@ namespace Aplicacion
         {
             folderBrowserDialog1.ShowDialog();
 
-            DirectoryInfo directorio = new DirectoryInfo(folderBrowserDialog1.SelectedPath);
-            FileInfo[] files = directorio.GetFiles();
-            imagenes = new List<FileInfo>();
-            smpControl.SS = 0;
-            smpControl.MM = 0;
-            imageIndex = 0;
-
-            for (int i = 0; i < files.Length; i++)
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
-                for (int j = 0; j < extensiones.Length; j++)
+                DirectoryInfo directorio = new DirectoryInfo(folderBrowserDialog1.SelectedPath);
+                FileInfo[] files = directorio.GetFiles();
+                imagenes = new List<FileInfo>();
+                smpControl.SS = 0;
+                smpControl.MM = 0;
+                imageIndex = 0;
+
+                for (int i = 0; i < files.Length; i++)
                 {
-                    if (files[i].Name.EndsWith(extensiones[j]))
+                    for (int j = 0; j < extensiones.Length; j++)
                     {
-                        imagenes.Add(files[i]);
+                        if (files[i].Name.EndsWith(extensiones[j]))
+                        {
+                            imagenes.Add(files[i]);
+                        }
                     }
                 }
-            }
 
-            if (imagenes.Count > 0)
-            {
-                pbDisplay.Image = Image.FromFile(imagenes[imageIndex].FullName);
+                if (imagenes.Count > 0)
+                {
+                    pbDisplay.Image = Image.FromFile(imagenes[imageIndex].FullName);
+                }
             }
-
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)

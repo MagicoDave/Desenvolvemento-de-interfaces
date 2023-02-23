@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -68,6 +69,27 @@ namespace Tema_5_interfaces
         {
             base.OnPaint(pe);
 
+            Graphics g = pe.Graphics;
+
+            //Invertir coordenadas
+            g.ScaleTransform(1.0F, -1.0F);
+            g.TranslateTransform(0.0F, -(float)Height);
+            Color color;
+            if (valida)
+            {
+                color = Color.Green;
+            } else
+            {
+                color = Color.Red;
+            }
+            int h = this.Height;
+            int w = this.Width;
+
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            Pen lapiz = new Pen(color, 5);
+
+            g.DrawRectangle(lapiz, 5, 5, w - 10, h - 10);
         }
 
         private void ValidateTextBox_Resize(object sender, EventArgs e)
@@ -87,6 +109,30 @@ namespace Tema_5_interfaces
                 this.Height = txt.Height + 20;
             }
             this.Refresh();
+        }
+
+        [Category("Behavior")]
+        [Description("Se lanza cuando se cambia el texto del textbox")]
+        public event System.EventHandler TextChange;
+
+        protected virtual void OnTextChange(EventArgs e)
+        {
+            TextChange?.Invoke(this, e);
+        }
+
+        private void txt_TextChanged(object sender, EventArgs e)
+        {
+            if (tipo == eTipo.Numérico)
+            {
+                double aux = 0;
+                valida = double.TryParse(txt.Text.Trim(), out aux);
+            } else if (tipo == eTipo.Textual)
+            {
+                valida = !txt.Text.Any(char.IsDigit);
+            }
+            Debug.WriteLine(valida);
+            Actualizar();
+            OnTextChange(EventArgs.Empty);
         }
     }
 }

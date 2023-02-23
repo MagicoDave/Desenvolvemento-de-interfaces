@@ -1,0 +1,15 @@
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\bin\Debug\net6.0\chatroom server.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\bin\Debug\net6.0\chatroom server.deps.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\bin\Debug\net6.0\chatroom server.runtimeconfig.json
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\bin\Debug\net6.0\chatroom server.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\bin\Debug\net6.0\chatroom server.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\obj\Debug\net6.0\chatroom server.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\obj\Debug\net6.0\chatroom server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\obj\Debug\net6.0\chatroom server.AssemblyInfoInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\obj\Debug\net6.0\chatroom server.AssemblyInfo.cs
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\obj\Debug\net6.0\chatroom server.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\obj\Debug\net6.0\chatroom server.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\obj\Debug\net6.0\refint\chatroom server.dll
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\obj\Debug\net6.0\chatroom server.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\obj\Debug\net6.0\chatroom server.genruntimeconfig.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\chatroom server\obj\Debug\net6.0\ref\chatroom server.dll

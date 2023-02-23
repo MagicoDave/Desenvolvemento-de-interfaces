@@ -36,10 +36,10 @@
             // 
             // ahorcado
             // 
-            this.ahorcado.Errores = 0;
+            this.ahorcado.Errores = 20;
             this.ahorcado.Location = new System.Drawing.Point(12, 12);
             this.ahorcado.Name = "ahorcado";
-            this.ahorcado.Size = new System.Drawing.Size(302, 307);
+            this.ahorcado.Size = new System.Drawing.Size(303, 281);
             this.ahorcado.TabIndex = 0;
             this.ahorcado.Text = "dibujoAhorcado1";
             this.ahorcado.Ahorcado += new System.EventHandler(this.ahorcado_Ahorcado);

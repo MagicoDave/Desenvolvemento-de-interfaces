@@ -33,8 +33,9 @@ namespace chatroom_server
 
         public static void hiloCliente(object usuario)
         {
+            Usuario u = (Usuario) usuario;
             string mensaje;
-            Socket cliente = ((Usuario)usuario).Socket;
+            Socket cliente = u.Socket;
             IPEndPoint ieCliente = (IPEndPoint) cliente.RemoteEndPoint;
             Console.WriteLine("Connected with client {0} at port {1}",
                 ieCliente.Address, ieCliente.Port);
@@ -56,8 +57,8 @@ namespace chatroom_server
                         //El mensaje es null al cerrar
                         if (mensaje != null)
                         {
-                            Console.WriteLine("{0} says: {1}",
-                            ieCliente.Address, mensaje);
+                            Console.WriteLine("{0}@{1} says: {2}",
+                            u.Alias, ieCliente.Address, mensaje);
                         }
                     }
                     catch (IOException)

@@ -75,10 +75,10 @@
             // 
             // validateTextBox1
             // 
-            this.validateTextBox1.Location = new System.Drawing.Point(277, 475);
-            this.validateTextBox1.Multilinea = false;
+            this.validateTextBox1.Location = new System.Drawing.Point(336, 475);
+            this.validateTextBox1.Multilinea = true;
             this.validateTextBox1.Name = "validateTextBox1";
-            this.validateTextBox1.Size = new System.Drawing.Size(355, 40);
+            this.validateTextBox1.Size = new System.Drawing.Size(199, 43);
             this.validateTextBox1.TabIndex = 4;
             this.validateTextBox1.Texto = "";
             this.validateTextBox1.Tipo = Tema_5_interfaces.eTipo.Textual;
