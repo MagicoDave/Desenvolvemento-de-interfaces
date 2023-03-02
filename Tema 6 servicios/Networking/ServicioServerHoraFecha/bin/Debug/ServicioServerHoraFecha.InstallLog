@@ -1,0 +1,13 @@
+﻿Instalando ensamblado 'C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\bin\Debug\ServicioServerHoraFecha.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\bin\Debug\ServicioServerHoraFecha.InstallLog
+   assemblypath = C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\bin\Debug\ServicioServerHoraFecha.exe
+Instalando el servicio ServicioServerHoraFecha...
+El servicio ServicioServerHoraFecha se ha instalado correctamente.
+Creando el origen de EventLog ServicioServerHoraFecha en el registro Application...
+Confirmando ensamblado 'C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\bin\Debug\ServicioServerHoraFecha.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\bin\Debug\ServicioServerHoraFecha.InstallLog
+   assemblypath = C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\bin\Debug\ServicioServerHoraFecha.exe

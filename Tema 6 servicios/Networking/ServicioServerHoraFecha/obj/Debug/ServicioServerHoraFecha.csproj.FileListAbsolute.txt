@@ -1,0 +1,11 @@
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\bin\Debug\ServicioServerHoraFecha.exe.config
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\bin\Debug\ServicioServerHoraFecha.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\bin\Debug\ServicioServerHoraFecha.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\obj\Debug\ServicioServerHoraFecha.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\obj\Debug\ServicioServerHoraFecha.csproj.SuggestedBindingRedirects.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\obj\Debug\ServicioServerHoraFecha.ProjectInstaller.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\obj\Debug\ServicioServerHoraFecha.ServicioServerFechaHora.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\obj\Debug\ServicioServerHoraFecha.csproj.GenerateResource.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\obj\Debug\ServicioServerHoraFecha.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\obj\Debug\ServicioServerHoraFecha.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioServerHoraFecha\obj\Debug\ServicioServerHoraFecha.pdb

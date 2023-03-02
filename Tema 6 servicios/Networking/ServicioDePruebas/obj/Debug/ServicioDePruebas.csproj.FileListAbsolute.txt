@@ -1,0 +1,11 @@
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.exe.config
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.pdb
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\obj\Debug\ServicioDePruebas.csproj.AssemblyReference.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\obj\Debug\ServicioDePruebas.csproj.SuggestedBindingRedirects.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\obj\Debug\ServicioDePruebas.ProjectInstaller.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\obj\Debug\ServicioDePruebas.SimpleService.resources
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\obj\Debug\ServicioDePruebas.csproj.GenerateResource.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\obj\Debug\ServicioDePruebas.csproj.CoreCompileInputs.cache
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\obj\Debug\ServicioDePruebas.exe
+C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\obj\Debug\ServicioDePruebas.pdb

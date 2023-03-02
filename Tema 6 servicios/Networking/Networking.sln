@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ejer1 client", "ejer1 clien
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ejer2", "ejer2\ejer2.csproj", "{A17520E2-FAF6-424C-A905-395981376AF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chatroom server", "chatroom server\chatroom server.csproj", "{2E4457A7-9853-4A0E-89AD-9549F6B88762}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chatroom server", "chatroom server\chatroom server.csproj", "{2E4457A7-9853-4A0E-89AD-9549F6B88762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioDePruebas", "ServicioDePruebas\ServicioDePruebas.csproj", "{8E847B42-729F-4C49-8490-21E3D15751A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioServerHoraFecha", "ServicioServerHoraFecha\ServicioServerHoraFecha.csproj", "{FEC5B750-62F4-4043-BA99-59D0758FE996}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{2E4457A7-9853-4A0E-89AD-9549F6B88762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E4457A7-9853-4A0E-89AD-9549F6B88762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E4457A7-9853-4A0E-89AD-9549F6B88762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E847B42-729F-4C49-8490-21E3D15751A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E847B42-729F-4C49-8490-21E3D15751A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E847B42-729F-4C49-8490-21E3D15751A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E847B42-729F-4C49-8490-21E3D15751A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEC5B750-62F4-4043-BA99-59D0758FE996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEC5B750-62F4-4043-BA99-59D0758FE996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEC5B750-62F4-4043-BA99-59D0758FE996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEC5B750-62F4-4043-BA99-59D0758FE996}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

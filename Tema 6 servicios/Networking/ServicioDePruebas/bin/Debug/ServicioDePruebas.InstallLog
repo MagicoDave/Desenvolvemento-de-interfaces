@@ -1,0 +1,21 @@
+﻿Instalando ensamblado 'C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.InstallLog
+   assemblypath = C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.exe
+Instalando el servicio SimpleService...
+El servicio SimpleService se ha instalado correctamente.
+Creando el origen de EventLog SimpleService en el registro Application...
+Confirmando ensamblado 'C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.InstallLog
+   assemblypath = C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.exe
+Desinstalando ensamblado 'C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.InstallLog
+   assemblypath = C:\Users\David Casalderrey\Documents\Desarrollo de interfaces\Tema 6 servicios\Networking\ServicioDePruebas\bin\Debug\ServicioDePruebas.exe
+Quitando el origen de EventLog SimpleService.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
